@@ -6,7 +6,6 @@ import { toast } from "sonner";
 import { StatusBadge } from "@/components/badges";
 import { Shell } from "@/components/shell";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { api } from "@/lib/client";
@@ -80,8 +79,9 @@ export default function StudentPage() {
           </div>
           <div className="space-y-2">
             <Label htmlFor="device">设备</Label>
-            <Input
+            <input
               id="device"
+              className="h-9 w-full rounded-lg border border-input bg-card px-2.5 text-sm outline-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50"
               placeholder="例如工位18主机"
               value={device}
               onChange={(event) => setDevice(event.target.value)}

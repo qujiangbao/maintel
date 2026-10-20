@@ -4,7 +4,6 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { api } from "@/lib/client";
 import { ROLE_LABEL } from "@/lib/format";
@@ -31,18 +30,19 @@ export function LoginForm({
 }) {
   const router = useRouter();
   const [username, setUsername] = useState(accounts[0]?.username ?? "");
-  const [password, setPassword] = useState("");
+  const [password, setPassword] = useState(accounts[0]?.password ?? "");
   const [error, setError] = useState("");
   const [pending, setPending] = useState(false);
 
-  async function onSubmit(event: React.FormEvent) {
-    event.preventDefault();
+  async function loginWith(nextUsername: string, nextPassword: string) {
+    setUsername(nextUsername);
+    setPassword(nextPassword);
     setPending(true);
     setError("");
     try {
       await api("/api/auth/login", {
         method: "POST",
-        body: JSON.stringify({ username, password, role }),
+        body: JSON.stringify({ username: nextUsername, password: nextPassword, role }),
       });
       router.push(home[role]);
     } catch (err) {
@@ -50,6 +50,11 @@ export function LoginForm({
     } finally {
       setPending(false);
     }
+  }
+
+  async function onSubmit(event: React.FormEvent) {
+    event.preventDefault();
+    await loginWith(username, password);
   }
 
   return (
@@ -62,8 +67,9 @@ export function LoginForm({
       <form onSubmit={onSubmit} className="mt-6 space-y-4">
         <div className="space-y-2">
           <Label htmlFor="username">账号</Label>
-          <Input
+          <input
             id="username"
+            className="h-9 w-full rounded-lg border border-input bg-card px-2.5 text-sm outline-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50"
             autoComplete="username"
             value={username}
             onChange={(event) => setUsername(event.target.value)}
@@ -71,8 +77,9 @@ export function LoginForm({
         </div>
         <div className="space-y-2">
           <Label htmlFor="password">密码</Label>
-          <Input
+          <input
             id="password"
+            className="h-9 w-full rounded-lg border border-input bg-card px-2.5 text-sm outline-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50"
             type="password"
             autoComplete="current-password"
             value={password}
@@ -96,10 +103,7 @@ export function LoginForm({
               <button
                 type="button"
                 className="text-left text-primary"
-                onClick={() => {
-                  setUsername(account.username);
-                  setPassword(account.password);
-                }}
+                onClick={() => loginWith(account.username, account.password)}
               >
                 {account.username} / {account.password}
               </button>
