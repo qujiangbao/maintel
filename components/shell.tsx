@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { api } from "@/lib/client";
 import { ROLE_LABEL } from "@/lib/format";
@@ -20,7 +20,13 @@ const links: Record<Role, Array<{ href: string; label: string }>> = {
 
 export function Shell({ role, children }: { role: Role; children: React.ReactNode }) {
   const router = useRouter();
+  const routerRef = useRef(router);
   const [user, setUser] = useState<PublicUser | null>(null);
+  const [denied, setDenied] = useState(false);
+
+  useEffect(() => {
+    routerRef.current = router;
+  }, [router]);
 
   useEffect(() => {
     let active = true;
@@ -28,18 +34,21 @@ export function Shell({ role, children }: { role: Role; children: React.ReactNod
       .then((data) => {
         if (!active) return;
         if (data.user.role !== role) {
-          router.replace(`/login/${role}`);
+          setDenied(true);
+          routerRef.current.replace(`/login/${role}`);
           return;
         }
         setUser(data.user);
       })
       .catch(() => {
-        if (active) router.replace(`/login/${role}`);
+        if (!active) return;
+        setDenied(true);
+        routerRef.current.replace(`/login/${role}`);
       });
     return () => {
       active = false;
     };
-  }, [role, router]);
+  }, [role]);
 
   async function logout() {
     await api("/api/auth/logout", { method: "POST" });
@@ -47,7 +56,11 @@ export function Shell({ role, children }: { role: Role; children: React.ReactNod
   }
 
   if (!user) {
-    return <p className="px-6 py-16 text-sm text-muted-foreground">正在核对登录状态…</p>;
+    return (
+      <p className="px-6 py-16 text-sm text-muted-foreground">
+        {denied ? <Link href={`/login/${role}`}>登录没有生效，返回登录页</Link> : "正在核对登录状态…"}
+      </p>
+    );
   }
 
   return (
