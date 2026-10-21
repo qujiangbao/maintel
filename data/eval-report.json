@@ -1,0 +1,3248 @@
+{
+  "complete": true,
+  "generatedAt": "2026-10-21T08:22:40.892Z",
+  "deepseekModel": "deepseek-flash",
+  "zhipuModel": "glm-4-flash-250414",
+  "results": [
+    {
+      "caseId": "C003",
+      "deepseek": {
+        "ok": true,
+        "tag": "host",
+        "urgency": "medium",
+        "position": "主机维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"host\",\"urgency\":\"medium\",\"position\":\"主机维修岗\",\"reason\":\"故障为开机反复重启、无法进入系统，属主机整机故障；单台设备不能完成当前任务，需当天处理。\"}",
+        "reason": "故障为开机反复重启、无法进入系统，属主机整机故障；单台设备不能完成当前任务，需当天处理。",
+        "latencyMs": 1048,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "host",
+        "urgency": "high",
+        "position": "主机维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"host\",\"urgency\":\"high\",\"position\":\"主机维修岗\",\"reason\":\"正在上课，主机反复重启无法进系统\"}",
+        "reason": "正在上课，主机反复重启无法进系统",
+        "latencyMs": 1882,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C002",
+      "deepseek": {
+        "ok": true,
+        "tag": "host",
+        "urgency": "high",
+        "position": "主机维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"host\",\"urgency\":\"high\",\"position\":\"主机维修岗\",\"reason\":\"教师机按开机无反应属主机故障，正在上课且整班等待，符合紧急程度。\"}",
+        "reason": "教师机按开机无反应属主机故障，正在上课且整班等待，符合紧急程度。",
+        "latencyMs": 1232,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "host",
+        "urgency": "high",
+        "position": "主机维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"host\",\"urgency\":\"high\",\"position\":\"主机维修岗\",\"reason\":\"正在上课，教师机无法开机，影响整班教学。\"}",
+        "reason": "正在上课，教师机无法开机，影响整班教学。",
+        "latencyMs": 1843,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C001",
+      "deepseek": {
+        "ok": true,
+        "tag": "host",
+        "urgency": "medium",
+        "position": "主机维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"host\",\"urgency\":\"medium\",\"position\":\"主机维修岗\",\"reason\":\"按电源键无反应、机箱灯不亮、风扇不转，属主机电源或整机故障；单台设备当天需用，未写明正在上课或考试。\"}",
+        "reason": "按电源键无反应、机箱灯不亮、风扇不转，属主机电源或整机故障；单台设备当天需用，未写明正在上课或考试。",
+        "latencyMs": 1272,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "host",
+        "urgency": "high",
+        "position": "主机维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"host\",\"urgency\":\"high\",\"position\":\"主机维修岗\",\"reason\":\"按下电源键完全没反应，机箱灯不亮，风扇也不转，影响交实验报告。\"}",
+        "reason": "按下电源键完全没反应，机箱灯不亮，风扇也不转，影响交实验报告。",
+        "latencyMs": 2176,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C004",
+      "deepseek": {
+        "ok": true,
+        "tag": "host",
+        "urgency": "medium",
+        "position": "主机维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"host\",\"urgency\":\"medium\",\"position\":\"主机维修岗\",\"reason\":\"主机反复蓝屏，属主机系统故障；单台设备无法完成当前任务需当天处理。\"}",
+        "reason": "主机反复蓝屏，属主机系统故障；单台设备无法完成当前任务需当天处理。",
+        "latencyMs": 1122,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "host",
+        "urgency": "medium",
+        "position": "主机维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"host\",\"urgency\":\"medium\",\"position\":\"主机维修岗\",\"reason\":\"蓝屏故障，无法正常重启，影响使用。\"}",
+        "reason": "蓝屏故障，无法正常重启，影响使用。",
+        "latencyMs": 1490,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C005",
+      "deepseek": {
+        "ok": true,
+        "tag": "host",
+        "urgency": "critical",
+        "position": "主机维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"host\",\"urgency\":\"critical\",\"position\":\"主机维修岗\",\"reason\":\"机箱冒烟且有焦糊味，属安全风险，按特急处理。\"}",
+        "reason": "机箱冒烟且有焦糊味，属安全风险，按特急处理。",
+        "latencyMs": 1050,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "host",
+        "urgency": "critical",
+        "position": "主机维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"host\",\"urgency\":\"critical\",\"position\":\"主机维修岗\",\"reason\":\"出现焦糊味和冒烟，存在安全风险\"}",
+        "reason": "出现焦糊味和冒烟，存在安全风险",
+        "latencyMs": 1565,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C006",
+      "deepseek": {
+        "ok": true,
+        "tag": "host",
+        "urgency": "low",
+        "position": "主机维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"host\",\"urgency\":\"low\",\"position\":\"主机维修岗\",\"reason\":\"风扇异响属主机故障，但主机仍正常运转，仅轻微缺陷，可勉强使用。\"}",
+        "reason": "风扇异响属主机故障，但主机仍正常运转，仅轻微缺陷，可勉强使用。",
+        "latencyMs": 1205,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "host",
+        "urgency": "medium",
+        "position": "主机维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"host\",\"urgency\":\"medium\",\"position\":\"主机维修岗\",\"reason\":\"风扇异响，主机仍正常运转，需当天处理。\"}",
+        "reason": "风扇异响，主机仍正常运转，需当天处理。",
+        "latencyMs": 3060,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C007",
+      "deepseek": {
+        "ok": true,
+        "tag": "host",
+        "urgency": "medium",
+        "position": "主机维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"host\",\"urgency\":\"medium\",\"position\":\"主机维修岗\",\"reason\":\"硬盘异响且系统卡死、本地文件打不开，属主机故障；单台设备无法完成当前任务需当天处理。\"}",
+        "reason": "硬盘异响且系统卡死、本地文件打不开，属主机故障；单台设备无法完成当前任务需当天处理。",
+        "latencyMs": 1015,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "host",
+        "urgency": "medium",
+        "position": "主机维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"host\",\"urgency\":\"medium\",\"position\":\"主机维修岗\",\"reason\":\"硬盘异响，系统卡住不动，无法完成当前任务\"}",
+        "reason": "硬盘异响，系统卡住不动，无法完成当前任务",
+        "latencyMs": 2457,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C008",
+      "deepseek": {
+        "ok": true,
+        "tag": "host",
+        "urgency": "medium",
+        "position": "主机维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"host\",\"urgency\":\"medium\",\"position\":\"主机维修岗\",\"reason\":\"开机内存自检报警、无法进入系统，属主机整机故障，单台设备当天需处理。\"}",
+        "reason": "开机内存自检报警、无法进入系统，属主机整机故障，单台设备当天需处理。",
+        "latencyMs": 1110,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "host",
+        "urgency": "medium",
+        "position": "主机维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"host\",\"urgency\":\"medium\",\"position\":\"主机维修岗\",\"reason\":\"主机无法进入系统，内存自检报警\"}",
+        "reason": "主机无法进入系统，内存自检报警",
+        "latencyMs": 3000,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C009",
+      "deepseek": {
+        "ok": true,
+        "tag": "host",
+        "urgency": "medium",
+        "position": "主机维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"host\",\"urgency\":\"medium\",\"position\":\"主机维修岗\",\"reason\":\"已进桌面但程序卡死无响应，网络图标正常，属主机系统故障，单台设备无法完成当前任务需当天处理。\"}",
+        "reason": "已进桌面但程序卡死无响应，网络图标正常，属主机系统故障，单台设备无法完成当前任务需当天处理。",
+        "latencyMs": 1010,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "host",
+        "urgency": "medium",
+        "position": "主机维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"host\",\"urgency\":\"medium\",\"position\":\"主机维修岗\",\"reason\":\"主机进入桌面后程序未响应，重启无效，网络图标正常。\"}",
+        "reason": "主机进入桌面后程序未响应，重启无效，网络图标正常。",
+        "latencyMs": 1515,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C011",
+      "deepseek": {
+        "ok": true,
+        "tag": "host",
+        "urgency": "high",
+        "position": "主机维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"host\",\"urgency\":\"high\",\"position\":\"主机维修岗\",\"reason\":\"主机开机中途黑屏且电源灯灭，属主机整机故障；正在随堂测验，按紧急处理。\"}",
+        "reason": "主机开机中途黑屏且电源灯灭，属主机整机故障；正在随堂测验，按紧急处理。",
+        "latencyMs": 1134,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "host",
+        "urgency": "high",
+        "position": "主机维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"host\",\"urgency\":\"high\",\"position\":\"主机维修岗\",\"reason\":\"正在随堂测验，主机开到一半黑屏，电源灯灭，旁边机器正常。\"}",
+        "reason": "正在随堂测验，主机开到一半黑屏，电源灯灭，旁边机器正常。",
+        "latencyMs": 1525,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C010",
+      "deepseek": {
+        "ok": true,
+        "tag": "host",
+        "urgency": "medium",
+        "position": "主机维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"host\",\"urgency\":\"medium\",\"position\":\"主机维修岗\",\"reason\":\"主机自动关机属主机故障，无安全风险且未写明上课或整排故障，单台需当天处理。\"}",
+        "reason": "主机自动关机属主机故障，无安全风险且未写明上课或整排故障，单台需当天处理。",
+        "latencyMs": 992,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "host",
+        "urgency": "medium",
+        "position": "主机维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"host\",\"urgency\":\"medium\",\"position\":\"主机维修岗\",\"reason\":\"自动关机，需要当天处理。\"}",
+        "reason": "自动关机，需要当天处理。",
+        "latencyMs": 3153,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C012",
+      "deepseek": {
+        "ok": true,
+        "tag": "host",
+        "urgency": "medium",
+        "position": "主机维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"host\",\"urgency\":\"medium\",\"position\":\"主机维修岗\",\"reason\":\"故障为运行时掉电重启，属主机整机系统问题；单台设备不能完成当前任务需当天处理，无安全风险。\"}",
+        "reason": "故障为运行时掉电重启，属主机整机系统问题；单台设备不能完成当前任务需当天处理，无安全风险。",
+        "latencyMs": 1124,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "host",
+        "urgency": "high",
+        "position": "主机维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"host\",\"urgency\":\"high\",\"position\":\"主机维修岗\",\"reason\":\"正在运行时掉电重启，影响使用。\"}",
+        "reason": "正在运行时掉电重启，影响使用。",
+        "latencyMs": 3127,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C013",
+      "deepseek": {
+        "ok": true,
+        "tag": "host",
+        "urgency": "medium",
+        "position": "主机维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"host\",\"urgency\":\"medium\",\"position\":\"主机维修岗\",\"reason\":\"故障主体是主机箱，机箱过热导致死机，单台设备无法完成当前任务需当天处理。\"}",
+        "reason": "故障主体是主机箱，机箱过热导致死机，单台设备无法完成当前任务需当天处理。",
+        "latencyMs": 1171,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "host",
+        "urgency": "medium",
+        "position": "主机维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"host\",\"urgency\":\"medium\",\"position\":\"主机维修岗\",\"reason\":\"机箱侧板很烫，打开大型软件就死机\"}",
+        "reason": "机箱侧板很烫，打开大型软件就死机",
+        "latencyMs": 1975,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C014",
+      "deepseek": {
+        "ok": true,
+        "tag": "host",
+        "urgency": "medium",
+        "position": "主机维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"host\",\"urgency\":\"medium\",\"position\":\"主机维修岗\",\"reason\":\"显示器接隔壁主机正常，故障在主机；单台开机无画面需当天处理。\"}",
+        "reason": "显示器接隔壁主机正常，故障在主机；单台开机无画面需当天处理。",
+        "latencyMs": 1199,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "host",
+        "urgency": "medium",
+        "position": "主机维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"host\",\"urgency\":\"medium\",\"position\":\"主机维修岗\",\"reason\":\"主机无法显示画面，非显示器问题\"}",
+        "reason": "主机无法显示画面，非显示器问题",
+        "latencyMs": 1379,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C015",
+      "deepseek": {
+        "ok": true,
+        "tag": "host",
+        "urgency": "low",
+        "position": "主机维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"host\",\"urgency\":\"low\",\"position\":\"主机维修岗\",\"reason\":\"硬盘预警属主机故障，但文件仍可打开、能继续听课，设备勉强可用，判为一般。\"}",
+        "reason": "硬盘预警属主机故障，但文件仍可打开、能继续听课，设备勉强可用，判为一般。",
+        "latencyMs": 1079,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "host",
+        "urgency": "medium",
+        "position": "主机维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"host\",\"urgency\":\"medium\",\"position\":\"主机维修岗\",\"reason\":\"单台主机硬盘损坏预警，影响当前任务，需当天处理。\"}",
+        "reason": "单台主机硬盘损坏预警，影响当前任务，需当天处理。",
+        "latencyMs": 1375,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C016",
+      "deepseek": {
+        "ok": true,
+        "tag": "host",
+        "urgency": "high",
+        "position": "主机维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"host\",\"urgency\":\"high\",\"position\":\"主机维修岗\",\"reason\":\"五台主机同时无法开机，属整排故障且正在上课，按紧急程度判为high。\"}",
+        "reason": "五台主机同时无法开机，属整排故障且正在上课，按紧急程度判为high。",
+        "latencyMs": 778,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "host",
+        "urgency": "high",
+        "position": "主机维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"host\",\"urgency\":\"high\",\"position\":\"主机维修岗\",\"reason\":\"一整排工位同时无法开机，正在上课。\"}",
+        "reason": "一整排工位同时无法开机，正在上课。",
+        "latencyMs": 1303,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C017",
+      "deepseek": {
+        "ok": true,
+        "tag": "host",
+        "urgency": "medium",
+        "position": "主机维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"host\",\"urgency\":\"medium\",\"position\":\"主机维修岗\",\"reason\":\"故障主体是主机整机系统，开机卡在自动修复无法进入系统，单台设备不能完成当前任务需当天处理。\"}",
+        "reason": "故障主体是主机整机系统，开机卡在自动修复无法进入系统，单台设备不能完成当前任务需当天处理。",
+        "latencyMs": 922,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "host",
+        "urgency": "medium",
+        "position": "主机维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"host\",\"urgency\":\"medium\",\"position\":\"主机维修岗\",\"reason\":\"单台设备无法正常启动，影响使用。\"}",
+        "reason": "单台设备无法正常启动，影响使用。",
+        "latencyMs": 1378,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C018",
+      "deepseek": {
+        "ok": true,
+        "tag": "host",
+        "urgency": "critical",
+        "position": "主机维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"host\",\"urgency\":\"critical\",\"position\":\"主机维修岗\",\"reason\":\"机箱内火花、烧焦味属安全风险，按特急处理。\"}",
+        "reason": "机箱内火花、烧焦味属安全风险，按特急处理。",
+        "latencyMs": 860,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "host",
+        "urgency": "critical",
+        "position": "主机维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"host\",\"urgency\":\"critical\",\"position\":\"主机维修岗\",\"reason\":\"出现冒烟、焦糊味，存在安全风险\"}",
+        "reason": "出现冒烟、焦糊味，存在安全风险",
+        "latencyMs": 1462,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C019",
+      "deepseek": {
+        "ok": true,
+        "tag": "host",
+        "urgency": "medium",
+        "position": "主机维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"host\",\"urgency\":\"medium\",\"position\":\"主机维修岗\",\"reason\":\"主机反复重启且作业无法保存，属主机故障，单台设备当天需处理。\"}",
+        "reason": "主机反复重启且作业无法保存，属主机故障，单台设备当天需处理。",
+        "latencyMs": 1187,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "host",
+        "urgency": "medium",
+        "position": "主机维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"host\",\"urgency\":\"medium\",\"position\":\"主机维修岗\",\"reason\":\"主机每隔几分钟自动重启，无法保存作业。\"}",
+        "reason": "主机每隔几分钟自动重启，无法保存作业。",
+        "latencyMs": 1364,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C020",
+      "deepseek": {
+        "ok": true,
+        "tag": "host",
+        "urgency": "medium",
+        "position": "主机维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"host\",\"urgency\":\"medium\",\"position\":\"主机维修岗\",\"reason\":\"故障主体是主机，按电源风扇转半圈即停、系统起不来，属电源或开机故障，单台设备当天需处理。\"}",
+        "reason": "故障主体是主机，按电源风扇转半圈即停、系统起不来，属电源或开机故障，单台设备当天需处理。",
+        "latencyMs": 1134,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "host",
+        "urgency": "medium",
+        "position": "主机维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"host\",\"urgency\":\"medium\",\"position\":\"主机维修岗\",\"reason\":\"主机无法开机，风扇转动后停止，无法进入系统。\"}",
+        "reason": "主机无法开机，风扇转动后停止，无法进入系统。",
+        "latencyMs": 1802,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C021",
+      "deepseek": {
+        "ok": true,
+        "tag": "host",
+        "urgency": "high",
+        "position": "主机维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"host\",\"urgency\":\"high\",\"position\":\"主机维修岗\",\"reason\":\"教师演示备份机开不了机属主机故障，且写明本节课正在进行，按紧急程度判为紧急。\"}",
+        "reason": "教师演示备份机开不了机属主机故障，且写明本节课正在进行，按紧急程度判为紧急。",
+        "latencyMs": 1075,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "host",
+        "urgency": "high",
+        "position": "主机维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"host\",\"urgency\":\"high\",\"position\":\"主机维修岗\",\"reason\":\"教师演示备份机开不了机，本节课正在进行。\"}",
+        "reason": "教师演示备份机开不了机，本节课正在进行。",
+        "latencyMs": 2083,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C022",
+      "deepseek": {
+        "ok": true,
+        "tag": "host",
+        "urgency": "medium",
+        "position": "主机维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"host\",\"urgency\":\"medium\",\"position\":\"主机维修岗\",\"reason\":\"已进系统但资源管理器无响应，网络图标正常，属本地程序卡死归主机；单台设备不能完成当前任务需当天处理。\"}",
+        "reason": "已进系统但资源管理器无响应，网络图标正常，属本地程序卡死归主机；单台设备不能完成当前任务需当天处理。",
+        "latencyMs": 1234,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "host",
+        "urgency": "medium",
+        "position": "主机维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"host\",\"urgency\":\"medium\",\"position\":\"主机维修岗\",\"reason\":\"进系统后任务栏转圈，资源管理器无响应，无法完成当前任务。\"}",
+        "reason": "进系统后任务栏转圈，资源管理器无响应，无法完成当前任务。",
+        "latencyMs": 1947,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C024",
+      "deepseek": {
+        "ok": true,
+        "tag": "host",
+        "urgency": "medium",
+        "position": "主机维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"host\",\"urgency\":\"medium\",\"position\":\"主机维修岗\",\"reason\":\"主机报警并提示电源故障，属主机整机系统故障；单台无安全风险，需当天处理。\"}",
+        "reason": "主机报警并提示电源故障，属主机整机系统故障；单台无安全风险，需当天处理。",
+        "latencyMs": 854,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "host",
+        "urgency": "high",
+        "position": "主机维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"host\",\"urgency\":\"high\",\"position\":\"主机维修岗\",\"reason\":\"正在上课，主机报警提示电源故障\"}",
+        "reason": "正在上课，主机报警提示电源故障",
+        "latencyMs": 1151,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C023",
+      "deepseek": {
+        "ok": true,
+        "tag": "host",
+        "urgency": "medium",
+        "position": "主机维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"host\",\"urgency\":\"medium\",\"position\":\"主机维修岗\",\"reason\":\"CPU风扇不转、温度报警属主机散热故障，虽能打开文档但已降频，需当天处理。\"}",
+        "reason": "CPU风扇不转、温度报警属主机散热故障，虽能打开文档但已降频，需当天处理。",
+        "latencyMs": 1067,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "host",
+        "urgency": "medium",
+        "position": "主机维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"host\",\"urgency\":\"medium\",\"position\":\"主机维修岗\",\"reason\":\"CPU风扇不转，温度报警，机器已自动降频，但还能打开文档\"}",
+        "reason": "CPU风扇不转，温度报警，机器已自动降频，但还能打开文档",
+        "latencyMs": 3226,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C025",
+      "deepseek": {
+        "ok": true,
+        "tag": "display",
+        "urgency": "medium",
+        "position": "显示维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"display\",\"urgency\":\"medium\",\"position\":\"显示维修岗\",\"reason\":\"主机通电风扇转，显示器黑屏且换线无效，属显示设备故障，单台需当天处理。\"}",
+        "reason": "主机通电风扇转，显示器黑屏且换线无效，属显示设备故障，单台需当天处理。",
+        "latencyMs": 1133,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "display",
+        "urgency": "medium",
+        "position": "显示维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"display\",\"urgency\":\"medium\",\"position\":\"显示维修岗\",\"reason\":\"显示器黑屏，换线无效，故障在显示设备。\"}",
+        "reason": "显示器黑屏，换线无效，故障在显示设备。",
+        "latencyMs": 1440,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C026",
+      "deepseek": {
+        "ok": true,
+        "tag": "display",
+        "urgency": "medium",
+        "position": "显示维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"display\",\"urgency\":\"medium\",\"position\":\"显示维修岗\",\"reason\":\"显示器接到另一台主机仍花屏，故障在显示设备；单台设备不能完成当前任务需当天处理。\"}",
+        "reason": "显示器接到另一台主机仍花屏，故障在显示设备；单台设备不能完成当前任务需当天处理。",
+        "latencyMs": 880,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "display",
+        "urgency": "medium",
+        "position": "显示维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"display\",\"urgency\":\"medium\",\"position\":\"显示维修岗\",\"reason\":\"显示器花屏，确认非主机问题，需维修。\"}",
+        "reason": "显示器花屏，确认非主机问题，需维修。",
+        "latencyMs": 1803,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C027",
+      "deepseek": {
+        "ok": true,
+        "tag": "display",
+        "urgency": "low",
+        "position": "显示维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"display\",\"urgency\":\"low\",\"position\":\"显示维修岗\",\"reason\":\"工位显示器裂屏但文字仍可看清，属轻微缺陷且能勉强使用。\"}",
+        "reason": "工位显示器裂屏但文字仍可看清，属轻微缺陷且能勉强使用。",
+        "latencyMs": 1035,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "display",
+        "urgency": "low",
+        "position": "显示维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"display\",\"urgency\":\"low\",\"position\":\"显示维修岗\",\"reason\":\"屏幕裂了一道，文字还能看清，不影响继续做题。\"}",
+        "reason": "屏幕裂了一道，文字还能看清，不影响继续做题。",
+        "latencyMs": 1308,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C028",
+      "deepseek": {
+        "ok": true,
+        "tag": "display",
+        "urgency": "low",
+        "position": "显示维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"display\",\"urgency\":\"low\",\"position\":\"显示维修岗\",\"reason\":\"显示器偏色但文字仍能看清，属轻微缺陷，不耽误使用。\"}",
+        "reason": "显示器偏色但文字仍能看清，属轻微缺陷，不耽误使用。",
+        "latencyMs": 1118,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "display",
+        "urgency": "low",
+        "position": "显示维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"display\",\"urgency\":\"low\",\"position\":\"显示维修岗\",\"reason\":\"轻微偏色仍能看清，不耽误查资料。\"}",
+        "reason": "轻微偏色仍能看清，不耽误查资料。",
+        "latencyMs": 1659,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C029",
+      "deepseek": {
+        "ok": true,
+        "tag": "display",
+        "urgency": "medium",
+        "position": "显示维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"display\",\"urgency\":\"medium\",\"position\":\"显示维修岗\",\"reason\":\"显示器画面不停闪烁，主机正常，属显示设备故障；单台设备当天无法完成设计图任务，需当天处理。\"}",
+        "reason": "显示器画面不停闪烁，主机正常，属显示设备故障；单台设备当天无法完成设计图任务，需当天处理。",
+        "latencyMs": 913,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "display",
+        "urgency": "medium",
+        "position": "显示维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"display\",\"urgency\":\"medium\",\"position\":\"显示维修岗\",\"reason\":\"显示器画面闪烁，影响设计工作。\"}",
+        "reason": "显示器画面闪烁，影响设计工作。",
+        "latencyMs": 1207,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C030",
+      "deepseek": {
+        "ok": true,
+        "tag": "display",
+        "urgency": "low",
+        "position": "显示维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"display\",\"urgency\":\"low\",\"position\":\"显示维修岗\",\"reason\":\"显示器亮线属显示设备故障，其余正常且本节课不用，有替代，判一般。\"}",
+        "reason": "显示器亮线属显示设备故障，其余正常且本节课不用，有替代，判一般。",
+        "latencyMs": 1005,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "display",
+        "urgency": "low",
+        "position": "显示维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"display\",\"urgency\":\"low\",\"position\":\"显示维修岗\",\"reason\":\"显示器右下角有亮线，但听力课不用这台屏幕。\"}",
+        "reason": "显示器右下角有亮线，但听力课不用这台屏幕。",
+        "latencyMs": 1630,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C032",
+      "deepseek": {
+        "ok": true,
+        "tag": "display",
+        "urgency": "medium",
+        "position": "显示维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"display\",\"urgency\":\"medium\",\"position\":\"显示维修岗\",\"reason\":\"主机已通电且系统启动，显示器无信号，属显示设备故障，单台设备需当天处理。\"}",
+        "reason": "主机已通电且系统启动，显示器无信号，属显示设备故障，单台设备需当天处理。",
+        "latencyMs": 895,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "display",
+        "urgency": "medium",
+        "position": "显示维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"display\",\"urgency\":\"medium\",\"position\":\"显示维修岗\",\"reason\":\"显示器无信号，主机已通电，故障在显示设备。\"}",
+        "reason": "显示器无信号，主机已通电，故障在显示设备。",
+        "latencyMs": 1527,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C031",
+      "deepseek": {
+        "ok": true,
+        "tag": "display",
+        "urgency": "high",
+        "position": "显示维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"display\",\"urgency\":\"high\",\"position\":\"显示维修岗\",\"reason\":\"主机正常但显示器无信号，属显示设备故障；正在上课且教师机不可用，符合紧急。\"}",
+        "reason": "主机正常但显示器无信号，属显示设备故障；正在上课且教师机不可用，符合紧急。",
+        "latencyMs": 1044,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "display",
+        "urgency": "high",
+        "position": "显示维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"display\",\"urgency\":\"high\",\"position\":\"显示维修岗\",\"reason\":\"正在上课，教师机显示器无信号，影响教学。\"}",
+        "reason": "正在上课，教师机显示器无信号，影响教学。",
+        "latencyMs": 3260,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C033",
+      "deepseek": {
+        "ok": true,
+        "tag": "display",
+        "urgency": "medium",
+        "position": "显示维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"display\",\"urgency\":\"medium\",\"position\":\"显示维修岗\",\"reason\":\"主机已进入系统，显示器背光不亮，属显示设备故障，单台设备当天需处理。\"}",
+        "reason": "主机已进入系统，显示器背光不亮，属显示设备故障，单台设备当天需处理。",
+        "latencyMs": 1042,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "display",
+        "urgency": "medium",
+        "position": "显示维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"display\",\"urgency\":\"medium\",\"position\":\"显示维修岗\",\"reason\":\"显示器背光不亮，但主机已进入系统，属于显示设备故障。\"}",
+        "reason": "显示器背光不亮，但主机已进入系统，属于显示设备故障。",
+        "latencyMs": 2776,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C034",
+      "deepseek": {
+        "ok": true,
+        "tag": "display",
+        "urgency": "medium",
+        "position": "显示维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"display\",\"urgency\":\"medium\",\"position\":\"显示维修岗\",\"reason\":\"主机无异常，显示器分辨率乱跳且画面挤在左上角，属显示设备故障，单台设备需当天处理。\"}",
+        "reason": "主机无异常，显示器分辨率乱跳且画面挤在左上角，属显示设备故障，单台设备需当天处理。",
+        "latencyMs": 1302,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "display",
+        "urgency": "medium",
+        "position": "显示维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"display\",\"urgency\":\"medium\",\"position\":\"显示维修岗\",\"reason\":\"显示器分辨率乱跳，画面挤在左上角，重插电源无效，主机无异常。\"}",
+        "reason": "显示器分辨率乱跳，画面挤在左上角，重插电源无效，主机无异常。",
+        "latencyMs": 1698,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C035",
+      "deepseek": {
+        "ok": true,
+        "tag": "display",
+        "urgency": "medium",
+        "position": "显示维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"display\",\"urgency\":\"medium\",\"position\":\"显示维修岗\",\"reason\":\"显示器黑斑导致内容看不清，单台设备无法完成当前任务，需当天处理。\"}",
+        "reason": "显示器黑斑导致内容看不清，单台设备无法完成当前任务，需当天处理。",
+        "latencyMs": 1205,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "display",
+        "urgency": "medium",
+        "position": "显示维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"display\",\"urgency\":\"medium\",\"position\":\"显示维修岗\",\"reason\":\"显示器屏幕损坏无法正常显示\"}",
+        "reason": "显示器屏幕损坏无法正常显示",
+        "latencyMs": 1503,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C036",
+      "deepseek": {
+        "ok": true,
+        "tag": "display",
+        "urgency": "medium",
+        "position": "显示维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"display\",\"urgency\":\"medium\",\"position\":\"显示维修岗\",\"reason\":\"主机未重启，显示器间歇黑屏，属显示设备故障，单台设备影响当前使用需当天处理。\"}",
+        "reason": "主机未重启，显示器间歇黑屏，属显示设备故障，单台设备影响当前使用需当天处理。",
+        "latencyMs": 940,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "display",
+        "urgency": "medium",
+        "position": "显示维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"display\",\"urgency\":\"medium\",\"position\":\"显示维修岗\",\"reason\":\"显示器间歇性黑屏，影响使用，需当天处理。\"}",
+        "reason": "显示器间歇性黑屏，影响使用，需当天处理。",
+        "latencyMs": 1459,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C037",
+      "deepseek": {
+        "ok": true,
+        "tag": "display",
+        "urgency": "high",
+        "position": "显示维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"display\",\"urgency\":\"high\",\"position\":\"显示维修岗\",\"reason\":\"主机硬盘灯闪说明主机通电运行，显示器灭属显示设备故障；正在考试，按紧急程度判为high。\"}",
+        "reason": "主机硬盘灯闪说明主机通电运行，显示器灭属显示设备故障；正在考试，按紧急程度判为high。",
+        "latencyMs": 1140,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "display",
+        "urgency": "high",
+        "position": "显示维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"display\",\"urgency\":\"high\",\"position\":\"显示维修岗\",\"reason\":\"正在考试，显示器黑屏，主机硬盘灯闪烁。\"}",
+        "reason": "正在考试，显示器黑屏，主机硬盘灯闪烁。",
+        "latencyMs": 1431,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C038",
+      "deepseek": {
+        "ok": true,
+        "tag": "display",
+        "urgency": "medium",
+        "position": "显示维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"display\",\"urgency\":\"medium\",\"position\":\"显示维修岗\",\"reason\":\"显示器半边不亮，属显示设备故障；单台设备无法完成当前任务需当天处理。\"}",
+        "reason": "显示器半边不亮，属显示设备故障；单台设备无法完成当前任务需当天处理。",
+        "latencyMs": 1217,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "display",
+        "urgency": "medium",
+        "position": "显示维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"display\",\"urgency\":\"medium\",\"position\":\"显示维修岗\",\"reason\":\"显示器只亮半边，显示不完整，影响使用。\"}",
+        "reason": "显示器只亮半边，显示不完整，影响使用。",
+        "latencyMs": 1349,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C039",
+      "deepseek": {
+        "ok": true,
+        "tag": "display",
+        "urgency": "low",
+        "position": "显示维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"display\",\"urgency\":\"low\",\"position\":\"显示维修岗\",\"reason\":\"显示器边缘轻微漏光但内容完全看得清，属轻微缺陷，仍能勉强使用。\"}",
+        "reason": "显示器边缘轻微漏光但内容完全看得清，属轻微缺陷，仍能勉强使用。",
+        "latencyMs": 1086,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "display",
+        "urgency": "low",
+        "position": "显示维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"display\",\"urgency\":\"low\",\"position\":\"显示维修岗\",\"reason\":\"显示器边缘轻微漏光，内容清晰，仍能勉强使用。\"}",
+        "reason": "显示器边缘轻微漏光，内容清晰，仍能勉强使用。",
+        "latencyMs": 1895,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C040",
+      "deepseek": {
+        "ok": true,
+        "tag": "display",
+        "urgency": "medium",
+        "position": "显示维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"display\",\"urgency\":\"medium\",\"position\":\"显示维修岗\",\"reason\":\"显示器亮度调到最高仍很暗、几乎看不清，属显示设备故障，单台设备无法完成当前任务需当天处理。\"}",
+        "reason": "显示器亮度调到最高仍很暗、几乎看不清，属显示设备故障，单台设备无法完成当前任务需当天处理。",
+        "latencyMs": 944,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "display",
+        "urgency": "medium",
+        "position": "显示维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"display\",\"urgency\":\"medium\",\"position\":\"显示维修岗\",\"reason\":\"显示器亮度最高仍很暗，无法正常使用。\"}",
+        "reason": "显示器亮度最高仍很暗，无法正常使用。",
+        "latencyMs": 1295,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C041",
+      "deepseek": {
+        "ok": true,
+        "tag": "display",
+        "urgency": "high",
+        "position": "显示维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"display\",\"urgency\":\"high\",\"position\":\"显示维修岗\",\"reason\":\"主机正常，大显示器无信号属显示设备故障；参观马上开始，符合紧急。\"}",
+        "reason": "主机正常，大显示器无信号属显示设备故障；参观马上开始，符合紧急。",
+        "latencyMs": 1126,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "display",
+        "urgency": "high",
+        "position": "显示维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"display\",\"urgency\":\"high\",\"position\":\"显示维修岗\",\"reason\":\"大显示器无信号，参观即将开始。\"}",
+        "reason": "大显示器无信号，参观即将开始。",
+        "latencyMs": 1572,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C042",
+      "deepseek": {
+        "ok": true,
+        "tag": "display",
+        "urgency": "low",
+        "position": "显示维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"display\",\"urgency\":\"low\",\"position\":\"显示维修岗\",\"reason\":\"主机系统正常，显示器出现水波纹，属显示设备轻微缺陷，仍可勉强使用。\"}",
+        "reason": "主机系统正常，显示器出现水波纹，属显示设备轻微缺陷，仍可勉强使用。",
+        "latencyMs": 1016,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "display",
+        "urgency": "medium",
+        "position": "显示维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"display\",\"urgency\":\"medium\",\"position\":\"显示维修岗\",\"reason\":\"显示器出现水波纹，晃动鼠标时更明显，影响使用。\"}",
+        "reason": "显示器出现水波纹，晃动鼠标时更明显，影响使用。",
+        "latencyMs": 1678,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C044",
+      "deepseek": {
+        "ok": true,
+        "tag": "display",
+        "urgency": "low",
+        "position": "显示维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"display\",\"urgency\":\"low\",\"position\":\"显示维修岗\",\"reason\":\"显示器边缘发紫但正中文字清楚，仍可继续使用，属轻微缺陷。\"}",
+        "reason": "显示器边缘发紫但正中文字清楚，仍可继续使用，属轻微缺陷。",
+        "latencyMs": 803,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "display",
+        "urgency": "low",
+        "position": "显示维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"display\",\"urgency\":\"low\",\"position\":\"显示维修岗\",\"reason\":\"轻微偏色仍能看清\"}",
+        "reason": "轻微偏色仍能看清",
+        "latencyMs": 1219,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C043",
+      "deepseek": {
+        "ok": true,
+        "tag": "display",
+        "urgency": "medium",
+        "position": "显示维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"display\",\"urgency\":\"medium\",\"position\":\"显示维修岗\",\"reason\":\"主机已登录且键盘灯正常，显示器白屏，故障在显示设备，单台设备需当天处理。\"}",
+        "reason": "主机已登录且键盘灯正常，显示器白屏，故障在显示设备，单台设备需当天处理。",
+        "latencyMs": 1094,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "display",
+        "urgency": "medium",
+        "position": "显示维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"display\",\"urgency\":\"medium\",\"position\":\"显示维修岗\",\"reason\":\"显示器白屏但主机已登录，故障在显示设备。\"}",
+        "reason": "显示器白屏但主机已登录，故障在显示设备。",
+        "latencyMs": 2786,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C045",
+      "deepseek": {
+        "ok": true,
+        "tag": "display",
+        "urgency": "medium",
+        "position": "显示维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"display\",\"urgency\":\"medium\",\"position\":\"显示维修岗\",\"reason\":\"显示器无信号，主机接其他屏幕正常，故障在显示设备，单台需当天处理。\"}",
+        "reason": "显示器无信号，主机接其他屏幕正常，故障在显示设备，单台需当天处理。",
+        "latencyMs": 900,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "display",
+        "urgency": "medium",
+        "position": "显示维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"display\",\"urgency\":\"medium\",\"position\":\"显示维修岗\",\"reason\":\"显示器无信号，但更换主机后正常，故障在显示器\"}",
+        "reason": "显示器无信号，但更换主机后正常，故障在显示器",
+        "latencyMs": 1436,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C046",
+      "deepseek": {
+        "ok": true,
+        "tag": "display",
+        "urgency": "medium",
+        "position": "显示维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"display\",\"urgency\":\"medium\",\"position\":\"显示维修岗\",\"reason\":\"主机正常但显示器画面倒转且设置无效，属显示设备故障，单台无法正常使用需当天处理。\"}",
+        "reason": "主机正常但显示器画面倒转且设置无效，属显示设备故障，单台无法正常使用需当天处理。",
+        "latencyMs": 1069,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "display",
+        "urgency": "medium",
+        "position": "显示维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"display\",\"urgency\":\"medium\",\"position\":\"显示维修岗\",\"reason\":\"显示器画面倒转180度，无法正常显示，影响使用。\"}",
+        "reason": "显示器画面倒转180度，无法正常显示，影响使用。",
+        "latencyMs": 1441,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C047",
+      "deepseek": {
+        "ok": true,
+        "tag": "display",
+        "urgency": "medium",
+        "position": "显示维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"display\",\"urgency\":\"medium\",\"position\":\"显示维修岗\",\"reason\":\"主机正常运行，单台显示器熄灭，属显示设备故障；未写明整排故障，单台需当天处理。\"}",
+        "reason": "主机正常运行，单台显示器熄灭，属显示设备故障；未写明整排故障，单台需当天处理。",
+        "latencyMs": 1222,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "display",
+        "urgency": "high",
+        "position": "显示维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"display\",\"urgency\":\"high\",\"position\":\"显示维修岗\",\"reason\":\"正在上课时一排中只有一台显示器熄灭\"}",
+        "reason": "正在上课时一排中只有一台显示器熄灭",
+        "latencyMs": 1494,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C048",
+      "deepseek": {
+        "ok": true,
+        "tag": "display",
+        "urgency": "medium",
+        "position": "显示维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"display\",\"urgency\":\"medium\",\"position\":\"显示维修岗\",\"reason\":\"显示器进液后出现闪烁色块且无法完整显示，属显示设备故障，单台设备当天需处理。\"}",
+        "reason": "显示器进液后出现闪烁色块且无法完整显示，属显示设备故障，单台设备当天需处理。",
+        "latencyMs": 1145,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "display",
+        "urgency": "medium",
+        "position": "显示维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"display\",\"urgency\":\"medium\",\"position\":\"显示维修岗\",\"reason\":\"屏幕被饮料洒到，出现大块闪烁色块，无法显示完整窗口。\"}",
+        "reason": "屏幕被饮料洒到，出现大块闪烁色块，无法显示完整窗口。",
+        "latencyMs": 2204,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C049",
+      "deepseek": {
+        "ok": true,
+        "tag": "network",
+        "urgency": "medium",
+        "position": "网络维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"network\",\"urgency\":\"medium\",\"position\":\"网络维修岗\",\"reason\":\"电脑能进系统但无法上网，水晶头松动接触不良，属网络链路故障，单台需当天处理。\"}",
+        "reason": "电脑能进系统但无法上网，水晶头松动接触不良，属网络链路故障，单台需当天处理。",
+        "latencyMs": 857,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "network",
+        "urgency": "medium",
+        "position": "网络维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"network\",\"urgency\":\"medium\",\"position\":\"网络维修岗\",\"reason\":\"网线水晶头松，影响上网，需当天处理。\"}",
+        "reason": "网线水晶头松，影响上网，需当天处理。",
+        "latencyMs": 1423,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C052",
+      "deepseek": {
+        "ok": true,
+        "tag": "network",
+        "urgency": "medium",
+        "position": "网络维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"network\",\"urgency\":\"medium\",\"position\":\"网络维修岗\",\"reason\":\"无线AP无信号，有线正常，属网络链路故障，单台AP影响局部需当天处理。\"}",
+        "reason": "无线AP无信号，有线正常，属网络链路故障，单台AP影响局部需当天处理。",
+        "latencyMs": 1064,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "network",
+        "urgency": "medium",
+        "position": "网络维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"network\",\"urgency\":\"medium\",\"position\":\"网络维修岗\",\"reason\":\"一整排工位同时故障\"}",
+        "reason": "一整排工位同时故障",
+        "latencyMs": 1237,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C050",
+      "deepseek": {
+        "ok": true,
+        "tag": "network",
+        "urgency": "critical",
+        "position": "网络维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"network\",\"urgency\":\"critical\",\"position\":\"网络维修岗\",\"reason\":\"整间机器全部上不了网且交换机指示灯不亮，属整间断网，符合特急。\"}",
+        "reason": "整间机器全部上不了网且交换机指示灯不亮，属整间断网，符合特急。",
+        "latencyMs": 1124,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "network",
+        "urgency": "high",
+        "position": "网络维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"network\",\"urgency\":\"high\",\"position\":\"网络维修岗\",\"reason\":\"整间机器上不了网，交换机指示灯不亮，影响上课。\"}",
+        "reason": "整间机器上不了网，交换机指示灯不亮，影响上课。",
+        "latencyMs": 3391,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C051",
+      "deepseek": {
+        "ok": true,
+        "tag": "network",
+        "urgency": "medium",
+        "position": "网络维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"network\",\"urgency\":\"medium\",\"position\":\"网络维修岗\",\"reason\":\"能进系统且本地正常，IP冲突导致登录掉线，属链路地址故障，单台需当天处理。\"}",
+        "reason": "能进系统且本地正常，IP冲突导致登录掉线，属链路地址故障，单台需当天处理。",
+        "latencyMs": 1218,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "network",
+        "urgency": "medium",
+        "position": "网络维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"network\",\"urgency\":\"medium\",\"position\":\"网络维修岗\",\"reason\":\"网口IP冲突导致登录校园网掉线\"}",
+        "reason": "网口IP冲突导致登录校园网掉线",
+        "latencyMs": 2805,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C053",
+      "deepseek": {
+        "ok": true,
+        "tag": "network",
+        "urgency": "medium",
+        "position": "网络维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"network\",\"urgency\":\"medium\",\"position\":\"网络维修岗\",\"reason\":\"电脑能开机，仅本机网络识别异常，网线在其他电脑正常，属链路或地址认证问题，单台需当天处理。\"}",
+        "reason": "电脑能开机，仅本机网络识别异常，网线在其他电脑正常，属链路或地址认证问题，单台需当天处理。",
+        "latencyMs": 981,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "network",
+        "urgency": "medium",
+        "position": "网络维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"network\",\"urgency\":\"medium\",\"position\":\"网络维修岗\",\"reason\":\"网线或水晶头损坏\"}",
+        "reason": "网线或水晶头损坏",
+        "latencyMs": 1215,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C054",
+      "deepseek": {
+        "ok": true,
+        "tag": "network",
+        "urgency": "medium",
+        "position": "网络维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"network\",\"urgency\":\"medium\",\"position\":\"网络维修岗\",\"reason\":\"能开机且本地播放正常，校园网客户端认证失败、网页打不开，属链路或认证故障，单台需当天处理。\"}",
+        "reason": "能开机且本地播放正常，校园网客户端认证失败、网页打不开，属链路或认证故障，单台需当天处理。",
+        "latencyMs": 1081,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "network",
+        "urgency": "medium",
+        "position": "网络维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"network\",\"urgency\":\"medium\",\"position\":\"网络维修岗\",\"reason\":\"电脑能开机进入系统，但校园网客户端认证失败，网页打不开。\"}",
+        "reason": "电脑能开机进入系统，但校园网客户端认证失败，网页打不开。",
+        "latencyMs": 1891,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C055",
+      "deepseek": {
+        "ok": true,
+        "tag": "network",
+        "urgency": "high",
+        "position": "网络维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"network\",\"urgency\":\"high\",\"position\":\"网络维修岗\",\"reason\":\"整排七台无法上网，其他排正常，属链路或地址故障；正在上课且整排同时故障，符合紧急。\"}",
+        "reason": "整排七台无法上网，其他排正常，属链路或地址故障；正在上课且整排同时故障，符合紧急。",
+        "latencyMs": 968,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "network",
+        "urgency": "high",
+        "position": "网络维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"network\",\"urgency\":\"high\",\"position\":\"网络维修岗\",\"reason\":\"整排工位上不了网，影响上课\"}",
+        "reason": "整排工位上不了网，影响上课",
+        "latencyMs": 1341,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C057",
+      "deepseek": {
+        "ok": true,
+        "tag": "network",
+        "urgency": "critical",
+        "position": "网络维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"network\",\"urgency\":\"critical\",\"position\":\"网络维修岗\",\"reason\":\"整间机房网络瘫痪，全班无法登录考试系统，属于整间主要功能全部不可用。\"}",
+        "reason": "整间机房网络瘫痪，全班无法登录考试系统，属于整间主要功能全部不可用。",
+        "latencyMs": 1064,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "network",
+        "urgency": "critical",
+        "position": "网络维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"network\",\"urgency\":\"critical\",\"position\":\"网络维修岗\",\"reason\":\"整间机房网络瘫痪，影响考试系统登录\"}",
+        "reason": "整间机房网络瘫痪，影响考试系统登录",
+        "latencyMs": 1269,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C056",
+      "deepseek": {
+        "ok": true,
+        "tag": "network",
+        "urgency": "medium",
+        "position": "网络维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"network\",\"urgency\":\"medium\",\"position\":\"网络维修岗\",\"reason\":\"能进系统且本地程序正常，仅浏览器和ping不通，单台网络链路或地址故障，需当天处理。\"}",
+        "reason": "能进系统且本地程序正常，仅浏览器和ping不通，单台网络链路或地址故障，需当天处理。",
+        "latencyMs": 819,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "network",
+        "urgency": "medium",
+        "position": "网络维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"network\",\"urgency\":\"medium\",\"position\":\"网络维修岗\",\"reason\":\"电脑能开机进入系统，但只有这一台无法访问网络，故障在链路或认证。\"}",
+        "reason": "电脑能开机进入系统，但只有这一台无法访问网络，故障在链路或认证。",
+        "latencyMs": 4311,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C058",
+      "deepseek": {
+        "ok": true,
+        "tag": "network",
+        "urgency": "low",
+        "position": "网络维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"network\",\"urgency\":\"low\",\"position\":\"网络维修岗\",\"reason\":\"能开机上网但网速慢，属链路问题，仍能勉强使用，判一般。\"}",
+        "reason": "能开机上网但网速慢，属链路问题，仍能勉强使用，判一般。",
+        "latencyMs": 1123,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "network",
+        "urgency": "medium",
+        "position": "网络维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"network\",\"urgency\":\"medium\",\"position\":\"网络维修岗\",\"reason\":\"网速很慢，影响使用，需当天处理。\"}",
+        "reason": "网速很慢，影响使用，需当天处理。",
+        "latencyMs": 2697,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C059",
+      "deepseek": {
+        "ok": true,
+        "tag": "network",
+        "urgency": "medium",
+        "position": "网络维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"network\",\"urgency\":\"medium\",\"position\":\"网络维修岗\",\"reason\":\"网线被轧断导致无法上网，属链路故障；单台设备当天需交作业，无安全风险且未在上课。\"}",
+        "reason": "网线被轧断导致无法上网，属链路故障；单台设备当天需交作业，无安全风险且未在上课。",
+        "latencyMs": 862,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "network",
+        "urgency": "medium",
+        "position": "网络维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"network\",\"urgency\":\"medium\",\"position\":\"网络维修岗\",\"reason\":\"网线被轧断导致完全不能上网，影响交作业。\"}",
+        "reason": "网线被轧断导致完全不能上网，影响交作业。",
+        "latencyMs": 2690,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C060",
+      "deepseek": {
+        "ok": true,
+        "tag": "network",
+        "urgency": "high",
+        "position": "网络维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"network\",\"urgency\":\"high\",\"position\":\"网络维修岗\",\"reason\":\"教师机可开机但无法上网、在线音频打不开，属链路或认证故障；正在上课且教师机不可用，判紧急。\"}",
+        "reason": "教师机可开机但无法上网、在线音频打不开，属链路或认证故障；正在上课且教师机不可用，判紧急。",
+        "latencyMs": 861,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "network",
+        "urgency": "high",
+        "position": "网络维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"network\",\"urgency\":\"high\",\"position\":\"网络维修岗\",\"reason\":\"正在上课，教师机网络故障影响教学\"}",
+        "reason": "正在上课，教师机网络故障影响教学",
+        "latencyMs": 1327,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C061",
+      "deepseek": {
+        "ok": true,
+        "tag": "network",
+        "urgency": "medium",
+        "position": "网络维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"network\",\"urgency\":\"medium\",\"position\":\"网络维修岗\",\"reason\":\"系统正常但网口无链路、重插无效，属链路故障，单台需当天处理。\"}",
+        "reason": "系统正常但网口无链路、重插无效，属链路故障，单台需当天处理。",
+        "latencyMs": 926,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "network",
+        "urgency": "medium",
+        "position": "网络维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"network\",\"urgency\":\"medium\",\"position\":\"网络维修岗\",\"reason\":\"网口无法联网，重插网线无效\"}",
+        "reason": "网口无法联网，重插网线无效",
+        "latencyMs": 2635,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C062",
+      "deepseek": {
+        "ok": true,
+        "tag": "network",
+        "urgency": "medium",
+        "position": "网络维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"network\",\"urgency\":\"medium\",\"position\":\"网络维修岗\",\"reason\":\"能开机进系统且本地正常，仅该台外网不通，属链路或地址认证问题，单台需当天处理。\"}",
+        "reason": "能开机进系统且本地正常，仅该台外网不通，属链路或地址认证问题，单台需当天处理。",
+        "latencyMs": 1286,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "network",
+        "urgency": "medium",
+        "position": "网络维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"network\",\"urgency\":\"medium\",\"position\":\"网络维修岗\",\"reason\":\"只有这一台电脑无法访问外网，故障范围单一。\"}",
+        "reason": "只有这一台电脑无法访问外网，故障范围单一。",
+        "latencyMs": 1361,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C063",
+      "deepseek": {
+        "ok": true,
+        "tag": "network",
+        "urgency": "medium",
+        "position": "网络维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"network\",\"urgency\":\"medium\",\"position\":\"网络维修岗\",\"reason\":\"水晶头损坏导致网线链路断开，单台设备当天需处理，无安全风险且非整排故障。\"}",
+        "reason": "水晶头损坏导致网线链路断开，单台设备当天需处理，无安全风险且非整排故障。",
+        "latencyMs": 1114,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "network",
+        "urgency": "medium",
+        "position": "网络维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"network\",\"urgency\":\"medium\",\"position\":\"网络维修岗\",\"reason\":\"网线水晶头损坏导致无法上网，影响当前使用。\"}",
+        "reason": "网线水晶头损坏导致无法上网，影响当前使用。",
+        "latencyMs": 2649,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C064",
+      "deepseek": {
+        "ok": true,
+        "tag": "network",
+        "urgency": "high",
+        "position": "网络维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"network\",\"urgency\":\"high\",\"position\":\"网络维修岗\",\"reason\":\"整排网口无链路灯，属链路故障且一整排同时故障，按规则判紧急。\"}",
+        "reason": "整排网口无链路灯，属链路故障且一整排同时故障，按规则判紧急。",
+        "latencyMs": 937,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "network",
+        "urgency": "medium",
+        "position": "网络维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"network\",\"urgency\":\"medium\",\"position\":\"网络维修岗\",\"reason\":\"整排网口无链路灯，非上课时间\"}",
+        "reason": "整排网口无链路灯，非上课时间",
+        "latencyMs": 1314,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C065",
+      "deepseek": {
+        "ok": true,
+        "tag": "network",
+        "urgency": "medium",
+        "position": "网络维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"network\",\"urgency\":\"medium\",\"position\":\"网络维修岗\",\"reason\":\"能登录且本地软件正常，仅IP冲突导致网络异常，单台设备需当天处理。\"}",
+        "reason": "能登录且本地软件正常，仅IP冲突导致网络异常，单台设备需当天处理。",
+        "latencyMs": 1088,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "network",
+        "urgency": "medium",
+        "position": "网络维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"network\",\"urgency\":\"medium\",\"position\":\"网络维修岗\",\"reason\":\"电脑能开机进入系统，故障在IP冲突\"}",
+        "reason": "电脑能开机进入系统，故障在IP冲突",
+        "latencyMs": 1738,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C066",
+      "deepseek": {
+        "ok": true,
+        "tag": "network",
+        "urgency": "medium",
+        "position": "网络维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"network\",\"urgency\":\"medium\",\"position\":\"网络维修岗\",\"reason\":\"单台电脑认证页面打不开且链路灯亮，属网络认证故障，需当天处理。\"}",
+        "reason": "单台电脑认证页面打不开且链路灯亮，属网络认证故障，需当天处理。",
+        "latencyMs": 1018,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "network",
+        "urgency": "medium",
+        "position": "网络维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"network\",\"urgency\":\"medium\",\"position\":\"网络维修岗\",\"reason\":\"只有一台电脑无法上网认证，认证页面打不开。\"}",
+        "reason": "只有一台电脑无法上网认证，认证页面打不开。",
+        "latencyMs": 1284,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C067",
+      "deepseek": {
+        "ok": true,
+        "tag": "network",
+        "urgency": "medium",
+        "position": "网络维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"network\",\"urgency\":\"medium\",\"position\":\"网络维修岗\",\"reason\":\"单台电脑能开机但频繁断网、平台掉线，属链路或认证故障；考试未开始，需当天处理。\"}",
+        "reason": "单台电脑能开机但频繁断网、平台掉线，属链路或认证故障；考试未开始，需当天处理。",
+        "latencyMs": 1148,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "network",
+        "urgency": "medium",
+        "position": "网络维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"network\",\"urgency\":\"medium\",\"position\":\"网络维修岗\",\"reason\":\"单台设备考试前频繁断网，影响使用。\"}",
+        "reason": "单台设备考试前频繁断网，影响使用。",
+        "latencyMs": 1393,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C068",
+      "deepseek": {
+        "ok": true,
+        "tag": "network",
+        "urgency": "medium",
+        "position": "网络维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"network\",\"urgency\":\"medium\",\"position\":\"网络维修岗\",\"reason\":\"电脑能进系统，桌面和本地文件正常，仅浏览器和聊天工具无网络，属链路或地址故障，单台需当天处理。\"}",
+        "reason": "电脑能进系统，桌面和本地文件正常，仅浏览器和聊天工具无网络，属链路或地址故障，单台需当天处理。",
+        "latencyMs": 1024,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "network",
+        "urgency": "medium",
+        "position": "网络维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"network\",\"urgency\":\"medium\",\"position\":\"网络维修岗\",\"reason\":\"电脑能开机进入系统，但浏览器和聊天工具提示无网络，属于链路或认证故障。\"}",
+        "reason": "电脑能开机进入系统，但浏览器和聊天工具提示无网络，属于链路或认证故障。",
+        "latencyMs": 1622,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C069",
+      "deepseek": {
+        "ok": true,
+        "tag": "network",
+        "urgency": "low",
+        "position": "网络维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"network\",\"urgency\":\"low\",\"position\":\"网络维修岗\",\"reason\":\"网线接口松动导致掉线，插紧仍可勉强使用，属网络链路故障且可临时替代。\"}",
+        "reason": "网线接口松动导致掉线，插紧仍可勉强使用，属网络链路故障且可临时替代。",
+        "latencyMs": 865,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "network",
+        "urgency": "medium",
+        "position": "网络维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"network\",\"urgency\":\"medium\",\"position\":\"网络维修岗\",\"reason\":\"网线接口松了，暂时还能用，但需当天处理。\"}",
+        "reason": "网线接口松了，暂时还能用，但需当天处理。",
+        "latencyMs": 1312,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C070",
+      "deepseek": {
+        "ok": true,
+        "tag": "network",
+        "urgency": "critical",
+        "position": "网络维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"network\",\"urgency\":\"critical\",\"position\":\"网络维修岗\",\"reason\":\"交换机灯全灭导致六台机器全部离线，整间网络瘫痪，且下午验收，符合整间主要功能不可用。\"}",
+        "reason": "交换机灯全灭导致六台机器全部离线，整间网络瘫痪，且下午验收，符合整间主要功能不可用。",
+        "latencyMs": 1027,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "network",
+        "urgency": "high",
+        "position": "网络维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"network\",\"urgency\":\"high\",\"position\":\"网络维修岗\",\"reason\":\"整间实验室断网，影响下午验收。\"}",
+        "reason": "整间实验室断网，影响下午验收。",
+        "latencyMs": 1802,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C071",
+      "deepseek": {
+        "ok": true,
+        "tag": "network",
+        "urgency": "medium",
+        "position": "网络维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"network\",\"urgency\":\"medium\",\"position\":\"网络维修岗\",\"reason\":\"能ping通网关但网页打不开，仅单台，属链路或DNS故障，需当天处理。\"}",
+        "reason": "能ping通网关但网页打不开，仅单台，属链路或DNS故障，需当天处理。",
+        "latencyMs": 983,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "network",
+        "urgency": "medium",
+        "position": "网络维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"network\",\"urgency\":\"medium\",\"position\":\"网络维修岗\",\"reason\":\"单台电脑域名打不开，DNS 修改无效\"}",
+        "reason": "单台电脑域名打不开，DNS 修改无效",
+        "latencyMs": 1764,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C072",
+      "deepseek": {
+        "ok": true,
+        "tag": "network",
+        "urgency": "high",
+        "position": "网络维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"network\",\"urgency\":\"high\",\"position\":\"网络维修岗\",\"reason\":\"考试中单台登录页面转圈进不去，属认证或链路故障，且写明正在考试。\"}",
+        "reason": "考试中单台登录页面转圈进不去，属认证或链路故障，且写明正在考试。",
+        "latencyMs": 1342,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "network",
+        "urgency": "high",
+        "position": "网络维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"network\",\"urgency\":\"high\",\"position\":\"网络维修岗\",\"reason\":\"正在考试，无法登录页面影响考试\"}",
+        "reason": "正在考试，无法登录页面影响考试",
+        "latencyMs": 1672,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C073",
+      "deepseek": {
+        "ok": true,
+        "tag": "media",
+        "urgency": "high",
+        "position": "多媒体维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"media\",\"urgency\":\"high\",\"position\":\"多媒体维修岗\",\"reason\":\"投影仪灯泡不亮属教室公共视听设备故障，正在上课且教师机正常，符合紧急程度。\"}",
+        "reason": "投影仪灯泡不亮属教室公共视听设备故障，正在上课且教师机正常，符合紧急程度。",
+        "latencyMs": 1118,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "media",
+        "urgency": "high",
+        "position": "多媒体维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"media\",\"urgency\":\"high\",\"position\":\"多媒体维修岗\",\"reason\":\"正在上课，投影仪灯泡不亮，影响教学。\"}",
+        "reason": "正在上课，投影仪灯泡不亮，影响教学。",
+        "latencyMs": 1288,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C075",
+      "deepseek": {
+        "ok": true,
+        "tag": "media",
+        "urgency": "high",
+        "position": "多媒体维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"media\",\"urgency\":\"high\",\"position\":\"多媒体维修岗\",\"reason\":\"墙上音响属教室公共视听设备，正在播放听力时无声，影响教学，需紧急处理。\"}",
+        "reason": "墙上音响属教室公共视听设备，正在播放听力时无声，影响教学，需紧急处理。",
+        "latencyMs": 1198,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "peripheral",
+        "urgency": "high",
+        "position": "外设维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"peripheral\",\"urgency\":\"high\",\"position\":\"外设维修岗\",\"reason\":\"正在上课，墙上音响无声影响听力教学\"}",
+        "reason": "正在上课，墙上音响无声影响听力教学",
+        "latencyMs": 1593,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C074",
+      "deepseek": {
+        "ok": true,
+        "tag": "media",
+        "urgency": "medium",
+        "position": "多媒体维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"media\",\"urgency\":\"medium\",\"position\":\"多媒体维修岗\",\"reason\":\"投影仪画面模糊且对焦旋钮拧不动，属教室公共视听设备故障，本节没课但下午要用，需当天处理。\"}",
+        "reason": "投影仪画面模糊且对焦旋钮拧不动，属教室公共视听设备故障，本节没课但下午要用，需当天处理。",
+        "latencyMs": 1036,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "media",
+        "urgency": "medium",
+        "position": "多媒体维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"media\",\"urgency\":\"medium\",\"position\":\"多媒体维修岗\",\"reason\":\"下午要使用，需当天处理对焦问题。\"}",
+        "reason": "下午要使用，需当天处理对焦问题。",
+        "latencyMs": 2833,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C076",
+      "deepseek": {
+        "ok": true,
+        "tag": "media",
+        "urgency": "medium",
+        "position": "多媒体维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"media\",\"urgency\":\"medium\",\"position\":\"多媒体维修岗\",\"reason\":\"电动幕布升降故障属多媒体设备，单台设备不能完成当前任务需当天处理，无课且非整排故障。\"}",
+        "reason": "电动幕布升降故障属多媒体设备，单台设备不能完成当前任务需当天处理，无课且非整排故障。",
+        "latencyMs": 1292,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "media",
+        "urgency": "medium",
+        "position": "多媒体维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"media\",\"urgency\":\"medium\",\"position\":\"多媒体维修岗\",\"reason\":\"幕布升到一半卡住，影响使用，需当天处理。\"}",
+        "reason": "幕布升到一半卡住，影响使用，需当天处理。",
+        "latencyMs": 2761,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C077",
+      "deepseek": {
+        "ok": true,
+        "tag": "media",
+        "urgency": "low",
+        "position": "多媒体维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\": \"media\", \"urgency\": \"low\", \"position\": \"多媒体维修岗\", \"reason\": \"中控面板死机属教室公共多媒体设备故障，参观未开始且可用显示器替代，暂不影响使用。\"}",
+        "reason": "中控面板死机属教室公共多媒体设备故障，参观未开始且可用显示器替代，暂不影响使用。",
+        "latencyMs": 983,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "media",
+        "urgency": "medium",
+        "position": "多媒体维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"media\",\"urgency\":\"medium\",\"position\":\"多媒体维修岗\",\"reason\":\"中控面板死机，切不了信号，影响参观使用。\"}",
+        "reason": "中控面板死机，切不了信号，影响参观使用。",
+        "latencyMs": 1210,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C079",
+      "deepseek": {
+        "ok": true,
+        "tag": "media",
+        "urgency": "high",
+        "position": "多媒体维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"media\",\"urgency\":\"high\",\"position\":\"多媒体维修岗\",\"reason\":\"电子白板触控失灵属教室公共多媒体设备，且老师正在使用，符合正在上课的紧急情形。\"}",
+        "reason": "电子白板触控失灵属教室公共多媒体设备，且老师正在使用，符合正在上课的紧急情形。",
+        "latencyMs": 960,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "media",
+        "urgency": "high",
+        "position": "多媒体维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"media\",\"urgency\":\"high\",\"position\":\"多媒体维修岗\",\"reason\":\"正在上课时电子白板触控失灵\"}",
+        "reason": "正在上课时电子白板触控失灵",
+        "latencyMs": 1442,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C078",
+      "deepseek": {
+        "ok": true,
+        "tag": "media",
+        "urgency": "low",
+        "position": "多媒体维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"media\",\"urgency\":\"low\",\"position\":\"多媒体维修岗\",\"reason\":\"手持话筒属教室公共视听设备，仅轻微杂音仍能讲话，按轻微缺陷归一般。\"}",
+        "reason": "手持话筒属教室公共视听设备，仅轻微杂音仍能讲话，按轻微缺陷归一般。",
+        "latencyMs": 984,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "peripheral",
+        "urgency": "low",
+        "position": "外设维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"peripheral\",\"urgency\":\"low\",\"position\":\"外设维修岗\",\"reason\":\"手持话筒有轻微杂音，但还能正常使用。\"}",
+        "reason": "手持话筒有轻微杂音，但还能正常使用。",
+        "latencyMs": 2923,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C080",
+      "deepseek": {
+        "ok": true,
+        "tag": "media",
+        "urgency": "medium",
+        "position": "多媒体维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"media\",\"urgency\":\"medium\",\"position\":\"多媒体维修岗\",\"reason\":\"投影仪过热关机属多媒体设备故障，本节不用投影，无安全风险，需当天处理。\"}",
+        "reason": "投影仪过热关机属多媒体设备故障，本节不用投影，无安全风险，需当天处理。",
+        "latencyMs": 1135,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "media",
+        "urgency": "medium",
+        "position": "多媒体维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"media\",\"urgency\":\"medium\",\"position\":\"多媒体维修岗\",\"reason\":\"投影仪过热关机，影响使用，需当天处理。\"}",
+        "reason": "投影仪过热关机，影响使用，需当天处理。",
+        "latencyMs": 2901,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C082",
+      "deepseek": {
+        "ok": true,
+        "tag": "media",
+        "urgency": "low",
+        "position": "多媒体维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"media\",\"urgency\":\"low\",\"position\":\"多媒体维修岗\",\"reason\":\"投影仪画面偏绿但文字可辨，且今天无投影教学，属轻微缺陷可勉强使用。\"}",
+        "reason": "投影仪画面偏绿但文字可辨，且今天无投影教学，属轻微缺陷可勉强使用。",
+        "latencyMs": 1069,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "media",
+        "urgency": "low",
+        "position": "多媒体维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"media\",\"urgency\":\"low\",\"position\":\"多媒体维修岗\",\"reason\":\"画面轻微偏色，不影响使用。\"}",
+        "reason": "画面轻微偏色，不影响使用。",
+        "latencyMs": 2555,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C081",
+      "deepseek": {
+        "ok": true,
+        "tag": "media",
+        "urgency": "medium",
+        "position": "多媒体维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"media\",\"urgency\":\"medium\",\"position\":\"多媒体维修岗\",\"reason\":\"主音箱属教室公共视听设备，单声道无声影响听力材料，课前调试未上课，需当天处理。\"}",
+        "reason": "主音箱属教室公共视听设备，单声道无声影响听力材料，课前调试未上课，需当天处理。",
+        "latencyMs": 1270,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "peripheral",
+        "urgency": "medium",
+        "position": "外设维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"peripheral\",\"urgency\":\"medium\",\"position\":\"外设维修岗\",\"reason\":\"单台设备故障影响使用，需当天处理。\"}",
+        "reason": "单台设备故障影响使用，需当天处理。",
+        "latencyMs": 2722,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C083",
+      "deepseek": {
+        "ok": true,
+        "tag": "media",
+        "urgency": "high",
+        "position": "多媒体维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"media\",\"urgency\":\"high\",\"position\":\"多媒体维修岗\",\"reason\":\"HDMI切换器属教室公共视听设备，电脑自身屏幕正常但投影无信号；验收讲解已开始要用投影，符合紧急。\"}",
+        "reason": "HDMI切换器属教室公共视听设备，电脑自身屏幕正常但投影无信号；验收讲解已开始要用投影，符合紧急。",
+        "latencyMs": 906,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "media",
+        "urgency": "high",
+        "position": "多媒体维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"media\",\"urgency\":\"high\",\"position\":\"多媒体维修岗\",\"reason\":\"切换器指示灯不亮，验收讲解要用投影\"}",
+        "reason": "切换器指示灯不亮，验收讲解要用投影",
+        "latencyMs": 2841,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C085",
+      "deepseek": {
+        "ok": true,
+        "tag": "media",
+        "urgency": "medium",
+        "position": "多媒体维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"media\",\"urgency\":\"medium\",\"position\":\"多媒体维修岗\",\"reason\":\"投影仪灯泡变暗影响后排阅读，属教室公共视听设备故障，单台设备当天需处理。\"}",
+        "reason": "投影仪灯泡变暗影响后排阅读，属教室公共视听设备故障，单台设备当天需处理。",
+        "latencyMs": 787,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "media",
+        "urgency": "medium",
+        "position": "多媒体维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"media\",\"urgency\":\"medium\",\"position\":\"多媒体维修岗\",\"reason\":\"投影仪灯泡变暗影响使用，需当天处理。\"}",
+        "reason": "投影仪灯泡变暗影响使用，需当天处理。",
+        "latencyMs": 1643,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C086",
+      "deepseek": {
+        "ok": true,
+        "tag": "media",
+        "urgency": "high",
+        "position": "多媒体维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"media\",\"urgency\":\"high\",\"position\":\"多媒体维修岗\",\"reason\":\"中控主机属教室公共多媒体设备，开不了导致音视频不可用，且下一节听力课即将使用。\"}",
+        "reason": "中控主机属教室公共多媒体设备，开不了导致音视频不可用，且下一节听力课即将使用。",
+        "latencyMs": 706,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "media",
+        "urgency": "high",
+        "position": "多媒体维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"media\",\"urgency\":\"high\",\"position\":\"多媒体维修岗\",\"reason\":\"中控主机故障导致音视频无法使用，影响下一节听力课。\"}",
+        "reason": "中控主机故障导致音视频无法使用，影响下一节听力课。",
+        "latencyMs": 1463,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C084",
+      "deepseek": {
+        "ok": true,
+        "tag": "media",
+        "urgency": "medium",
+        "position": "多媒体维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"media\",\"urgency\":\"medium\",\"position\":\"多媒体维修岗\",\"reason\":\"吊麦无声属教室公共视听设备故障，音箱正常说明非主机网络问题；下节课才用，单台设备当天需处理。\"}",
+        "reason": "吊麦无声属教室公共视听设备故障，音箱正常说明非主机网络问题；下节课才用，单台设备当天需处理。",
+        "latencyMs": 1202,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "peripheral",
+        "urgency": "low",
+        "position": "外设维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"peripheral\",\"urgency\":\"low\",\"position\":\"外设维修岗\",\"reason\":\"吊麦无声音，下节课才用，故障轻微。\"}",
+        "reason": "吊麦无声音，下节课才用，故障轻微。",
+        "latencyMs": 3657,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C087",
+      "deepseek": {
+        "ok": true,
+        "tag": "media",
+        "urgency": "high",
+        "position": "多媒体维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"media\",\"urgency\":\"high\",\"position\":\"多媒体维修岗\",\"reason\":\"电动幕布属教室公共视听设备，完全放不下来且本节课要用，符合紧急程度。\"}",
+        "reason": "电动幕布属教室公共视听设备，完全放不下来且本节课要用，符合紧急程度。",
+        "latencyMs": 1035,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "media",
+        "urgency": "high",
+        "position": "多媒体维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"media\",\"urgency\":\"high\",\"position\":\"多媒体维修岗\",\"reason\":\"幕布故障影响本节课使用\"}",
+        "reason": "幕布故障影响本节课使用",
+        "latencyMs": 2554,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C088",
+      "deepseek": {
+        "ok": true,
+        "tag": "media",
+        "urgency": "low",
+        "position": "多媒体维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"media\",\"urgency\":\"low\",\"position\":\"多媒体维修岗\",\"reason\":\"音响属教室公共视听设备，有电流声但还能凑合听清，属轻微缺陷。\"}",
+        "reason": "音响属教室公共视听设备，有电流声但还能凑合听清，属轻微缺陷。",
+        "latencyMs": 890,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "media",
+        "urgency": "medium",
+        "position": "多媒体维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"media\",\"urgency\":\"medium\",\"position\":\"多媒体维修岗\",\"reason\":\"音响有电流声，不播放时也嗡嗡响，影响使用\"}",
+        "reason": "音响有电流声，不播放时也嗡嗡响，影响使用",
+        "latencyMs": 1911,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C090",
+      "deepseek": {
+        "ok": true,
+        "tag": "media",
+        "urgency": "critical",
+        "position": "多媒体维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"media\",\"urgency\":\"critical\",\"position\":\"多媒体维修岗\",\"reason\":\"投影仪属于教室公共视听设备，出现焦糊味属安全风险，按规则判特急。\"}",
+        "reason": "投影仪属于教室公共视听设备，出现焦糊味属安全风险，按规则判特急。",
+        "latencyMs": 799,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "media",
+        "urgency": "critical",
+        "position": "多媒体维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"media\",\"urgency\":\"critical\",\"position\":\"多媒体维修岗\",\"reason\":\"出现焦糊味，有安全风险\"}",
+        "reason": "出现焦糊味，有安全风险",
+        "latencyMs": 1403,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C089",
+      "deepseek": {
+        "ok": true,
+        "tag": "media",
+        "urgency": "high",
+        "position": "多媒体维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"media\",\"urgency\":\"high\",\"position\":\"多媒体维修岗\",\"reason\":\"投影仪属教室公共视听设备，画面发虚且一小时后演示要用，符合紧急。\"}",
+        "reason": "投影仪属教室公共视听设备，画面发虚且一小时后演示要用，符合紧急。",
+        "latencyMs": 938,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "media",
+        "urgency": "medium",
+        "position": "多媒体维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"media\",\"urgency\":\"medium\",\"position\":\"多媒体维修岗\",\"reason\":\"投影仪镜头有灰尘，画面发虚，影响一小时后的演示，需当天处理。\"}",
+        "reason": "投影仪镜头有灰尘，画面发虚，影响一小时后的演示，需当天处理。",
+        "latencyMs": 3559,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C091",
+      "deepseek": {
+        "ok": true,
+        "tag": "media",
+        "urgency": "low",
+        "position": "多媒体维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"media\",\"urgency\":\"low\",\"position\":\"多媒体维修岗\",\"reason\":\"左壁挂音箱不响属教室公共音响故障，右音箱正常且无考试，仍能勉强使用。\"}",
+        "reason": "左壁挂音箱不响属教室公共音响故障，右音箱正常且无考试，仍能勉强使用。",
+        "latencyMs": 1238,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "peripheral",
+        "urgency": "low",
+        "position": "外设维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"peripheral\",\"urgency\":\"low\",\"position\":\"外设维修岗\",\"reason\":\"单侧音箱故障，尚能勉强使用。\"}",
+        "reason": "单侧音箱故障，尚能勉强使用。",
+        "latencyMs": 1426,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C092",
+      "deepseek": {
+        "ok": true,
+        "tag": "media",
+        "urgency": "medium",
+        "position": "多媒体维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"media\",\"urgency\":\"medium\",\"position\":\"多媒体维修岗\",\"reason\":\"教学一体机触控失灵属教室公共多媒体设备，单台设备无法完成当前书写任务需当天处理。\"}",
+        "reason": "教学一体机触控失灵属教室公共多媒体设备，单台设备无法完成当前书写任务需当天处理。",
+        "latencyMs": 978,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "media",
+        "urgency": "medium",
+        "position": "多媒体维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"media\",\"urgency\":\"medium\",\"position\":\"多媒体维修岗\",\"reason\":\"触控笔点不准，书写位置偏，无法正常使用教学一体机。\"}",
+        "reason": "触控笔点不准，书写位置偏，无法正常使用教学一体机。",
+        "latencyMs": 1894,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C093",
+      "deepseek": {
+        "ok": true,
+        "tag": "media",
+        "urgency": "high",
+        "position": "多媒体维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"media\",\"urgency\":\"high\",\"position\":\"多媒体维修岗\",\"reason\":\"笔记本自身屏幕正常，投影仪无画面且线口松动，属公共多媒体设备；答辩已开始，符合紧急。\"}",
+        "reason": "笔记本自身屏幕正常，投影仪无画面且线口松动，属公共多媒体设备；答辩已开始，符合紧急。",
+        "latencyMs": 889,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "media",
+        "urgency": "high",
+        "position": "多媒体维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"media\",\"urgency\":\"high\",\"position\":\"多媒体维修岗\",\"reason\":\"投影仪HDMI线口松动，影响答辩使用。\"}",
+        "reason": "投影仪HDMI线口松动，影响答辩使用。",
+        "latencyMs": 1367,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C096",
+      "deepseek": {
+        "ok": true,
+        "tag": "media",
+        "urgency": "critical",
+        "position": "多媒体维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"media\",\"urgency\":\"critical\",\"position\":\"多媒体维修岗\",\"reason\":\"听力主控属教室公共视听设备，全班耳机无声且教师端离线，正在考试致整间功能瘫痪。\"}",
+        "reason": "听力主控属教室公共视听设备，全班耳机无声且教师端离线，正在考试致整间功能瘫痪。",
+        "latencyMs": 801,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "peripheral",
+        "urgency": "high",
+        "position": "外设维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"peripheral\",\"urgency\":\"high\",\"position\":\"外设维修岗\",\"reason\":\"正在考试，全部学生耳机没声音，教师端显示设备离线\"}",
+        "reason": "正在考试，全部学生耳机没声音，教师端显示设备离线",
+        "latencyMs": 1486,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C094",
+      "deepseek": {
+        "ok": true,
+        "tag": "media",
+        "urgency": "medium",
+        "position": "多媒体维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"media\",\"urgency\":\"medium\",\"position\":\"多媒体维修岗\",\"reason\":\"无线话筒属教室公共视听设备，指示灯不亮且换电池无效，音箱正常，活动明天用，需当天处理。\"}",
+        "reason": "无线话筒属教室公共视听设备，指示灯不亮且换电池无效，音箱正常，活动明天用，需当天处理。",
+        "latencyMs": 955,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "peripheral",
+        "urgency": "low",
+        "position": "外设维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"peripheral\",\"urgency\":\"low\",\"position\":\"外设维修岗\",\"reason\":\"话筒指示灯不亮，换电池无效，活动在明天。\"}",
+        "reason": "话筒指示灯不亮，换电池无效，活动在明天。",
+        "latencyMs": 3402,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C095",
+      "deepseek": {
+        "ok": true,
+        "tag": "media",
+        "urgency": "low",
+        "position": "多媒体维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"media\",\"urgency\":\"low\",\"position\":\"多媒体维修岗\",\"reason\":\"投影幕布属于教室公共视听设备，画面仍能看懂，仅轻微缺陷，按一般处理。\"}",
+        "reason": "投影幕布属于教室公共视听设备，画面仍能看懂，仅轻微缺陷，按一般处理。",
+        "latencyMs": 1021,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "media",
+        "urgency": "low",
+        "position": "多媒体维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"media\",\"urgency\":\"low\",\"position\":\"多媒体维修岗\",\"reason\":\"幕布皱了，画面有点变形，但内容仍能看懂。\"}",
+        "reason": "幕布皱了，画面有点变形，但内容仍能看懂。",
+        "latencyMs": 2644,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C098",
+      "deepseek": {
+        "ok": true,
+        "tag": "peripheral",
+        "urgency": "medium",
+        "position": "外设维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"peripheral\",\"urgency\":\"medium\",\"position\":\"外设维修岗\",\"reason\":\"主机和键盘正常，鼠标不动且换USB口无效，属外设故障；单台设备无法完成当前任务需当天处理。\"}",
+        "reason": "主机和键盘正常，鼠标不动且换USB口无效，属外设故障；单台设备无法完成当前任务需当天处理。",
+        "latencyMs": 1050,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "peripheral",
+        "urgency": "medium",
+        "position": "外设维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"peripheral\",\"urgency\":\"medium\",\"position\":\"外设维修岗\",\"reason\":\"鼠标不动，无法完成当前任务\"}",
+        "reason": "鼠标不动，无法完成当前任务",
+        "latencyMs": 1521,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C097",
+      "deepseek": {
+        "ok": true,
+        "tag": "peripheral",
+        "urgency": "low",
+        "position": "外设维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"peripheral\",\"urgency\":\"low\",\"position\":\"外设维修岗\",\"reason\":\"键盘个别按键失灵但仍能凑合输入，主机和鼠标正常，属外设轻微缺陷。\"}",
+        "reason": "键盘个别按键失灵但仍能凑合输入，主机和鼠标正常，属外设轻微缺陷。",
+        "latencyMs": 944,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "peripheral",
+        "urgency": "medium",
+        "position": "外设维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"peripheral\",\"urgency\":\"medium\",\"position\":\"外设维修岗\",\"reason\":\"键盘部分按键失灵，影响使用但尚可替代。\"}",
+        "reason": "键盘部分按键失灵，影响使用但尚可替代。",
+        "latencyMs": 2159,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C099",
+      "deepseek": {
+        "ok": true,
+        "tag": "peripheral",
+        "urgency": "low",
+        "position": "外设维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"peripheral\",\"urgency\":\"low\",\"position\":\"外设维修岗\",\"reason\":\"打印机卡纸属外设故障，旁边有替代打印机可用，按一般处理。\"}",
+        "reason": "打印机卡纸属外设故障，旁边有替代打印机可用，按一般处理。",
+        "latencyMs": 1004,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "peripheral",
+        "urgency": "medium",
+        "position": "外设维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"peripheral\",\"urgency\":\"medium\",\"position\":\"外设维修岗\",\"reason\":\"单台打印机故障，影响使用，需当天处理。\"}",
+        "reason": "单台打印机故障，影响使用，需当天处理。",
+        "latencyMs": 2865,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C100",
+      "deepseek": {
+        "ok": true,
+        "tag": "peripheral",
+        "urgency": "medium",
+        "position": "外设维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"peripheral\",\"urgency\":\"medium\",\"position\":\"外设维修岗\",\"reason\":\"键盘完全失效且鼠标正常，属外设故障；单台设备当天无法完成写代码任务，需当天处理。\"}",
+        "reason": "键盘完全失效且鼠标正常，属外设故障；单台设备当天无法完成写代码任务，需当天处理。",
+        "latencyMs": 1279,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "peripheral",
+        "urgency": "medium",
+        "position": "外设维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"peripheral\",\"urgency\":\"medium\",\"position\":\"外设维修岗\",\"reason\":\"键盘失效影响编码任务\"}",
+        "reason": "键盘失效影响编码任务",
+        "latencyMs": 1126,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C102",
+      "deepseek": {
+        "ok": true,
+        "tag": "peripheral",
+        "urgency": "low",
+        "position": "外设维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"peripheral\",\"urgency\":\"low\",\"position\":\"外设维修岗\",\"reason\":\"耳麦单侧无声，主机和教室音响正常，属外设故障；仍可勉强使用，判一般。\"}",
+        "reason": "耳麦单侧无声，主机和教室音响正常，属外设故障；仍可勉强使用，判一般。",
+        "latencyMs": 949,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "peripheral",
+        "urgency": "medium",
+        "position": "外设维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"peripheral\",\"urgency\":\"medium\",\"position\":\"外设维修岗\",\"reason\":\"耳麦单侧无声，需当天处理。\"}",
+        "reason": "耳麦单侧无声，需当天处理。",
+        "latencyMs": 1195,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C101",
+      "deepseek": {
+        "ok": true,
+        "tag": "peripheral",
+        "urgency": "medium",
+        "position": "外设维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"peripheral\",\"urgency\":\"medium\",\"position\":\"外设维修岗\",\"reason\":\"扫描仪无响应，主机和网络正常，属外设故障；单台设备不能完成当前任务需当天处理。\"}",
+        "reason": "扫描仪无响应，主机和网络正常，属外设故障；单台设备不能完成当前任务需当天处理。",
+        "latencyMs": 973,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "peripheral",
+        "urgency": "medium",
+        "position": "外设维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"peripheral\",\"urgency\":\"medium\",\"position\":\"外设维修岗\",\"reason\":\"扫描仪无法被识别，影响使用。\"}",
+        "reason": "扫描仪无法被识别，影响使用。",
+        "latencyMs": 3203,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C103",
+      "deepseek": {
+        "ok": true,
+        "tag": "peripheral",
+        "urgency": "high",
+        "position": "外设维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"peripheral\",\"urgency\":\"high\",\"position\":\"外设维修岗\",\"reason\":\"鼠标按键失灵属外设故障，且正在上机考试，影响答题操作。\"}",
+        "reason": "鼠标按键失灵属外设故障，且正在上机考试，影响答题操作。",
+        "latencyMs": 965,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "peripheral",
+        "urgency": "high",
+        "position": "外设维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"peripheral\",\"urgency\":\"high\",\"position\":\"外设维修岗\",\"reason\":\"正在上机考试，鼠标键失灵影响考试\"}",
+        "reason": "正在上机考试，鼠标键失灵影响考试",
+        "latencyMs": 2735,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C104",
+      "deepseek": {
+        "ok": true,
+        "tag": "peripheral",
+        "urgency": "low",
+        "position": "外设维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"peripheral\",\"urgency\":\"low\",\"position\":\"外设维修岗\",\"reason\":\"键盘空格键塌陷但其他键正常，仍能勉强输入，属轻微缺陷。\"}",
+        "reason": "键盘空格键塌陷但其他键正常，仍能勉强输入，属轻微缺陷。",
+        "latencyMs": 1042,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "peripheral",
+        "urgency": "low",
+        "position": "外设维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"peripheral\",\"urgency\":\"low\",\"position\":\"外设维修岗\",\"reason\":\"键盘空格键塌陷，其他键正常，基本还能输入。\"}",
+        "reason": "键盘空格键塌陷，其他键正常，基本还能输入。",
+        "latencyMs": 1540,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C105",
+      "deepseek": {
+        "ok": true,
+        "tag": "peripheral",
+        "urgency": "medium",
+        "position": "外设维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"peripheral\",\"urgency\":\"medium\",\"position\":\"外设维修岗\",\"reason\":\"打印机缺墨导致文档空白，属外设故障；仅此一台且读者正在等，需当天处理。\"}",
+        "reason": "打印机缺墨导致文档空白，属外设故障；仅此一台且读者正在等，需当天处理。",
+        "latencyMs": 1077,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "peripheral",
+        "urgency": "medium",
+        "position": "外设维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"peripheral\",\"urgency\":\"medium\",\"position\":\"外设维修岗\",\"reason\":\"打印机缺墨，影响读者使用\"}",
+        "reason": "打印机缺墨，影响读者使用",
+        "latencyMs": 3011,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C106",
+      "deepseek": {
+        "ok": true,
+        "tag": "peripheral",
+        "urgency": "high",
+        "position": "外设维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"peripheral\",\"urgency\":\"high\",\"position\":\"外设维修岗\",\"reason\":\"电脑和网络正常，摄像头无图像属外设故障；验收会议已开始，按紧急处理。\"}",
+        "reason": "电脑和网络正常，摄像头无图像属外设故障；验收会议已开始，按紧急处理。",
+        "latencyMs": 1186,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "peripheral",
+        "urgency": "high",
+        "position": "外设维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"peripheral\",\"urgency\":\"high\",\"position\":\"外设维修岗\",\"reason\":\"验收会议已经开始，会议摄像头黑屏，电脑和网络都正常。\"}",
+        "reason": "验收会议已经开始，会议摄像头黑屏，电脑和网络都正常。",
+        "latencyMs": 2548,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C107",
+      "deepseek": {
+        "ok": true,
+        "tag": "peripheral",
+        "urgency": "low",
+        "position": "外设维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"peripheral\",\"urgency\":\"low\",\"position\":\"外设维修岗\",\"reason\":\"鼠标指针飘移但仍能点击，属外设轻微缺陷，可勉强使用。\"}",
+        "reason": "鼠标指针飘移但仍能点击，属外设轻微缺陷，可勉强使用。",
+        "latencyMs": 1123,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "peripheral",
+        "urgency": "medium",
+        "position": "外设维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"peripheral\",\"urgency\":\"medium\",\"position\":\"外设维修岗\",\"reason\":\"鼠标指针飘移影响使用，需当天处理。\"}",
+        "reason": "鼠标指针飘移影响使用，需当天处理。",
+        "latencyMs": 2836,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C108",
+      "deepseek": {
+        "ok": true,
+        "tag": "peripheral",
+        "urgency": "medium",
+        "position": "外设维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"peripheral\",\"urgency\":\"medium\",\"position\":\"外设维修岗\",\"reason\":\"键盘进水连击无法正常输入，属外设故障，单台设备当天需处理。\"}",
+        "reason": "键盘进水连击无法正常输入，属外设故障，单台设备当天需处理。",
+        "latencyMs": 1174,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "peripheral",
+        "urgency": "medium",
+        "position": "外设维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"peripheral\",\"urgency\":\"medium\",\"position\":\"外设维修岗\",\"reason\":\"键盘进水，多个键连击，不能正常输入。\"}",
+        "reason": "键盘进水，多个键连击，不能正常输入。",
+        "latencyMs": 1718,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C109",
+      "deepseek": {
+        "ok": true,
+        "tag": "peripheral",
+        "urgency": "high",
+        "position": "外设维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"peripheral\",\"urgency\":\"high\",\"position\":\"外设维修岗\",\"reason\":\"耳麦麦克风无输入属外设故障，且口语考试正在进行，按紧急程度判为high。\"}",
+        "reason": "耳麦麦克风无输入属外设故障，且口语考试正在进行，按紧急程度判为high。",
+        "latencyMs": 1263,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "peripheral",
+        "urgency": "high",
+        "position": "外设维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"peripheral\",\"urgency\":\"high\",\"position\":\"外设维修岗\",\"reason\":\"耳麦麦克风无输入，影响口语考试进行\"}",
+        "reason": "耳麦麦克风无输入，影响口语考试进行",
+        "latencyMs": 1824,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C110",
+      "deepseek": {
+        "ok": true,
+        "tag": "peripheral",
+        "urgency": "low",
+        "position": "外设维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"peripheral\",\"urgency\":\"low\",\"position\":\"外设维修岗\",\"reason\":\"鼠标滚轮失效但左右键正常，仍可继续操作，属轻微缺陷。\"}",
+        "reason": "鼠标滚轮失效但左右键正常，仍可继续操作，属轻微缺陷。",
+        "latencyMs": 1054,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "peripheral",
+        "urgency": "low",
+        "position": "外设维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"peripheral\",\"urgency\":\"low\",\"position\":\"外设维修岗\",\"reason\":\"设备仍能勉强使用，只有轻微缺陷。\"}",
+        "reason": "设备仍能勉强使用，只有轻微缺陷。",
+        "latencyMs": 1319,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C111",
+      "deepseek": {
+        "ok": true,
+        "tag": "peripheral",
+        "urgency": "medium",
+        "position": "外设维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"peripheral\",\"urgency\":\"medium\",\"position\":\"外设维修岗\",\"reason\":\"扫描仪进纸歪斜卡纸无法扫描，属外设故障，单台设备当天需用，判较急。\"}",
+        "reason": "扫描仪进纸歪斜卡纸无法扫描，属外设故障，单台设备当天需用，判较急。",
+        "latencyMs": 1120,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "peripheral",
+        "urgency": "medium",
+        "position": "外设维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"peripheral\",\"urgency\":\"medium\",\"position\":\"外设维修岗\",\"reason\":\"扫描仪卡纸影响数字化任务\"}",
+        "reason": "扫描仪卡纸影响数字化任务",
+        "latencyMs": 2207,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C112",
+      "deepseek": {
+        "ok": true,
+        "tag": "peripheral",
+        "urgency": "medium",
+        "position": "外设维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"peripheral\",\"urgency\":\"medium\",\"position\":\"外设维修岗\",\"reason\":\"键盘接口松动导致输入中断，主机和网络正常，属外设故障且影响当前使用需当天处理。\"}",
+        "reason": "键盘接口松动导致输入中断，主机和网络正常，属外设故障且影响当前使用需当天处理。",
+        "latencyMs": 1059,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "peripheral",
+        "urgency": "medium",
+        "position": "外设维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"peripheral\",\"urgency\":\"medium\",\"position\":\"外设维修岗\",\"reason\":\"键盘接口松，文档经常打到一半中断\"}",
+        "reason": "键盘接口松，文档经常打到一半中断",
+        "latencyMs": 1398,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C113",
+      "deepseek": {
+        "ok": true,
+        "tag": "peripheral",
+        "urgency": "low",
+        "position": "外设维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"peripheral\",\"urgency\":\"low\",\"position\":\"外设维修岗\",\"reason\":\"数位板无响应属外设故障，主机和网络正常，且当前有替代方式不影响使用。\"}",
+        "reason": "数位板无响应属外设故障，主机和网络正常，且当前有替代方式不影响使用。",
+        "latencyMs": 1240,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "peripheral",
+        "urgency": "medium",
+        "position": "外设维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"peripheral\",\"urgency\":\"medium\",\"position\":\"外设维修岗\",\"reason\":\"数位板没反应，影响绘图等操作，需当天处理。\"}",
+        "reason": "数位板没反应，影响绘图等操作，需当天处理。",
+        "latencyMs": 1387,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C114",
+      "deepseek": {
+        "ok": true,
+        "tag": "peripheral",
+        "urgency": "high",
+        "position": "外设维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"peripheral\",\"urgency\":\"high\",\"position\":\"外设维修岗\",\"reason\":\"键鼠同时失灵，换一套即好，主机正常，属外设故障；正在上课且马上交卷，需紧急处理。\"}",
+        "reason": "键鼠同时失灵，换一套即好，主机正常，属外设故障；正在上课且马上交卷，需紧急处理。",
+        "latencyMs": 996,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "peripheral",
+        "urgency": "high",
+        "position": "外设维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"peripheral\",\"urgency\":\"high\",\"position\":\"外设维修岗\",\"reason\":\"正在上课，键鼠同时失灵，影响交卷。\"}",
+        "reason": "正在上课，键鼠同时失灵，影响交卷。",
+        "latencyMs": 1545,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C115",
+      "deepseek": {
+        "ok": true,
+        "tag": "peripheral",
+        "urgency": "medium",
+        "position": "外设维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"peripheral\",\"urgency\":\"medium\",\"position\":\"外设维修岗\",\"reason\":\"打印机脱机无法打印，属外设故障；机房仅此一台且当前无人排队，单台设备不能完成当前任务需当天处理。\"}",
+        "reason": "打印机脱机无法打印，属外设故障；机房仅此一台且当前无人排队，单台设备不能完成当前任务需当天处理。",
+        "latencyMs": 905,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "peripheral",
+        "urgency": "medium",
+        "position": "外设维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"peripheral\",\"urgency\":\"medium\",\"position\":\"外设维修岗\",\"reason\":\"单台打印机脱机，无法完成打印任务\"}",
+        "reason": "单台打印机脱机，无法完成打印任务",
+        "latencyMs": 1202,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C116",
+      "deepseek": {
+        "ok": true,
+        "tag": "peripheral",
+        "urgency": "low",
+        "position": "外设维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"peripheral\",\"urgency\":\"low\",\"position\":\"外设维修岗\",\"reason\":\"耳麦线皮破损偶有杂音但仍能听清，属外设轻微缺陷，可勉强使用。\"}",
+        "reason": "耳麦线皮破损偶有杂音但仍能听清，属外设轻微缺陷，可勉强使用。",
+        "latencyMs": 1055,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "peripheral",
+        "urgency": "low",
+        "position": "外设维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"peripheral\",\"urgency\":\"low\",\"position\":\"外设维修岗\",\"reason\":\"耳麦线破损轻微，尚能使用，只有轻微缺陷。\"}",
+        "reason": "耳麦线破损轻微，尚能使用，只有轻微缺陷。",
+        "latencyMs": 1372,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C117",
+      "deepseek": {
+        "ok": true,
+        "tag": "peripheral",
+        "urgency": "medium",
+        "position": "外设维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"peripheral\",\"urgency\":\"medium\",\"position\":\"外设维修岗\",\"reason\":\"鼠标双击异常导致误拖拽，属外设故障，影响当前整理目录任务需当天处理。\"}",
+        "reason": "鼠标双击异常导致误拖拽，属外设故障，影响当前整理目录任务需当天处理。",
+        "latencyMs": 1265,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "peripheral",
+        "urgency": "medium",
+        "position": "外设维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"peripheral\",\"urgency\":\"medium\",\"position\":\"外设维修岗\",\"reason\":\"鼠标双击变拖拽，影响工作，需当天处理。\"}",
+        "reason": "鼠标双击变拖拽，影响工作，需当天处理。",
+        "latencyMs": 1417,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C118",
+      "deepseek": {
+        "ok": true,
+        "tag": "peripheral",
+        "urgency": "medium",
+        "position": "外设维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"peripheral\",\"urgency\":\"medium\",\"position\":\"外设维修岗\",\"reason\":\"键盘回车键失灵，其他键正常，属外设故障；单台设备无法完成当前任务需当天处理。\"}",
+        "reason": "键盘回车键失灵，其他键正常，属外设故障；单台设备无法完成当前任务需当天处理。",
+        "latencyMs": 1164,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "peripheral",
+        "urgency": "medium",
+        "position": "外设维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"peripheral\",\"urgency\":\"medium\",\"position\":\"外设维修岗\",\"reason\":\"键盘回车键失灵，影响命令行操作和编程\"}",
+        "reason": "键盘回车键失灵，影响命令行操作和编程",
+        "latencyMs": 1497,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C120",
+      "deepseek": {
+        "ok": true,
+        "tag": "peripheral",
+        "urgency": "high",
+        "position": "外设维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"peripheral\",\"urgency\":\"high\",\"position\":\"外设维修岗\",\"reason\":\"键盘无反应属外设故障，且正在测验、无法完成输入任务。\"}",
+        "reason": "键盘无反应属外设故障，且正在测验、无法完成输入任务。",
+        "latencyMs": 1001,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "peripheral",
+        "urgency": "high",
+        "position": "外设维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"peripheral\",\"urgency\":\"high\",\"position\":\"外设维修岗\",\"reason\":\"正在测验，整把键盘无反应，影响答题\"}",
+        "reason": "正在测验，整把键盘无反应，影响答题",
+        "latencyMs": 1221,
+        "modelName": "glm-4-flash-250414"
+      }
+    },
+    {
+      "caseId": "C119",
+      "deepseek": {
+        "ok": true,
+        "tag": "peripheral",
+        "urgency": "low",
+        "position": "外设维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"peripheral\",\"urgency\":\"low\",\"position\":\"外设维修岗\",\"reason\":\"摄像头画面颠倒模糊属外设故障，会议未开始且已有替代电脑，可稍后处理。\"}",
+        "reason": "摄像头画面颠倒模糊属外设故障，会议未开始且已有替代电脑，可稍后处理。",
+        "latencyMs": 1048,
+        "modelName": "deepseek-flash"
+      },
+      "zhipu": {
+        "ok": true,
+        "tag": "peripheral",
+        "urgency": "low",
+        "position": "外设维修岗",
+        "error": null,
+        "httpStatus": 200,
+        "raw": "{\"tag\":\"peripheral\",\"urgency\":\"low\",\"position\":\"外设维修岗\",\"reason\":\"摄像头轻微故障，可替代使用。\"}",
+        "reason": "摄像头轻微故障，可替代使用。",
+        "latencyMs": 2971,
+        "modelName": "glm-4-flash-250414"
+      }
+    }
+  ]
+}
