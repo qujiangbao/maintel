@@ -3,9 +3,11 @@
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
+import { ArrowLeft, ArrowRight, BadgeCheck, Bot, History, SendHorizontal, TriangleAlert } from "lucide-react";
 import { toast } from "sonner";
 import { StatusBadge, TagBadge, UrgencyBadge } from "@/components/badges";
 import { Shell } from "@/components/shell";
+import { StatusSteps } from "@/components/status-steps";
 import { Timeline } from "@/components/timeline";
 import { Button } from "@/components/ui/button";
 import {
@@ -119,42 +121,56 @@ export default function AdminTicketPage() {
 
   return (
     <Shell role="admin">
-      <Link href="/admin" className="text-sm text-muted-foreground">
+      <Link
+        href="/admin"
+        className="inline-flex items-center gap-1.5 text-sm text-muted-foreground transition-colors hover:text-foreground"
+      >
+        <ArrowLeft className="size-4" />
         返回工单
       </Link>
       {error ? <p className="mt-4 text-sm text-destructive">{error}</p> : null}
       {!ticket && !error ? <p className="mt-4 text-sm text-muted-foreground">正在读取工单…</p> : null}
       {ticket ? (
         <div className="mt-4 space-y-6">
-          <section className="rounded-xl bg-card p-5 ring-1 ring-foreground/10">
+          <section className="panel p-5">
             <div className="flex flex-wrap items-center gap-3">
-              <h1 className="font-display text-3xl">{ticket.no}</h1>
+              <h1 className="font-display text-3xl tracking-tight">{ticket.no}</h1>
               <StatusBadge status={ticket.status} />
             </div>
-            <p className="mt-3 text-sm text-muted-foreground">
+            <p className="mt-2 text-sm text-muted-foreground">
               {ticket.studentName} · {ticket.studentDetail} · {formatTime(ticket.createdAt)}
             </p>
-            <dl className="mt-4 grid gap-4 text-sm sm:grid-cols-3">
+            <div className="mt-4 overflow-x-auto pb-1">
+              <StatusSteps status={ticket.status} />
+            </div>
+            <dl className="mt-4 grid gap-4 border-t border-border/70 pt-4 text-sm sm:grid-cols-3">
               <div>
-                <dt className="text-muted-foreground">机房</dt>
-                <dd>{ticket.room}</dd>
+                <dt className="text-xs text-muted-foreground">机房</dt>
+                <dd className="mt-1 font-medium">{ticket.room}</dd>
               </div>
               <div>
-                <dt className="text-muted-foreground">设备</dt>
-                <dd>{ticket.device}</dd>
+                <dt className="text-xs text-muted-foreground">设备</dt>
+                <dd className="mt-1 font-medium">{ticket.device}</dd>
               </div>
               <div className="sm:col-span-3">
-                <dt className="text-muted-foreground">故障描述</dt>
-                <dd className="leading-6">{ticket.description}</dd>
+                <dt className="text-xs text-muted-foreground">故障描述</dt>
+                <dd className="mt-1 leading-6">{ticket.description}</dd>
               </div>
             </dl>
           </section>
 
-          <section className="rounded-xl bg-card p-5 ring-1 ring-foreground/10">
-            <h2 className="font-display text-2xl">模型分诊</h2>
-            <p className="mt-1 text-sm text-muted-foreground">
-              页面只选择模型。密钥放在服务器环境变量里，换模型会追加一条结果，不会覆盖上一次。
-            </p>
+          <section className="panel p-5">
+            <div className="flex items-center gap-3">
+              <span className="flex size-10 items-center justify-center rounded-xl bg-primary/10 text-primary">
+                <Bot className="size-5" />
+              </span>
+              <div>
+                <h2 className="font-display text-2xl tracking-tight">模型分诊</h2>
+                <p className="mt-0.5 text-xs text-muted-foreground">
+                  页面只选择模型。密钥放在服务器环境变量里，换模型会追加一条结果，不会覆盖上一次。
+                </p>
+              </div>
+            </div>
             <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:items-center">
               <select
                 className="field-select sm:max-w-xs"
@@ -174,15 +190,23 @@ export default function AdminTicketPage() {
               </Button>
             </div>
             {selected && !selected.configured ? (
-              <p className="mt-3 text-sm text-destructive">服务器未配置 {selected.envName}，不能在页面填写密钥。</p>
+              <p className="mt-3 flex items-center gap-1.5 text-sm text-destructive">
+                <TriangleAlert className="size-4" />
+                服务器未配置 {selected.envName}，不能在页面填写密钥。
+              </p>
             ) : null}
             <div className="mt-5 grid gap-4 lg:grid-cols-2">
               {models.map((item) => (
-                <div key={item.id}>
-                  <h3 className="text-sm font-medium">{item.label}</h3>
-                  <div className="mt-2 space-y-3">
+                <div key={item.id} className="rounded-xl bg-muted/40 p-3.5 ring-1 ring-foreground/8">
+                  <h3 className="flex items-center justify-between text-sm font-medium">
+                    {item.label}
+                    <span className="text-xs font-normal text-muted-foreground">{item.modelName}</span>
+                  </h3>
+                  <div className="mt-3 space-y-3">
                     {ticket.triages.filter((record) => record.model === item.id).length === 0 ? (
-                      <p className="text-sm text-muted-foreground">还没有这条模型的结果。</p>
+                      <p className="rounded-lg border border-dashed border-foreground/15 px-3 py-4 text-center text-sm text-muted-foreground">
+                        还没有这条模型的结果。
+                      </p>
                     ) : null}
                     {ticket.triages
                       .filter((record) => record.model === item.id)
@@ -201,10 +225,18 @@ export default function AdminTicketPage() {
             </div>
           </section>
 
-          <section className="rounded-xl bg-card p-5 ring-1 ring-foreground/10">
-            <h2 className="font-display text-2xl">派发</h2>
+          <section className="panel p-5">
+            <div className="flex items-center gap-3">
+              <span className="flex size-10 items-center justify-center rounded-xl bg-primary/10 text-primary">
+                <SendHorizontal className="size-5" />
+              </span>
+              <h2 className="font-display text-2xl tracking-tight">派发</h2>
+            </div>
             {!confirmed ? (
-              <p className="mt-2 text-sm text-muted-foreground">管理员确认分诊结果之前，不能派给维修人员。</p>
+              <p className="mt-3 flex items-center gap-2 rounded-lg bg-muted/60 px-3.5 py-2.5 text-sm text-muted-foreground">
+                <BadgeCheck className="size-4 shrink-0" />
+                管理员确认分诊结果之前，不能派给维修人员。
+              </p>
             ) : (
               <div className="mt-3 space-y-3">
                 <p className="text-sm">
@@ -213,7 +245,7 @@ export default function AdminTicketPage() {
                 {ticket.assigneeName ? (
                   <p className="text-sm">已派给 {ticket.assigneeName}（{ticket.assigneePosition}）。</p>
                 ) : (
-                  <>
+                  <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
                     <select
                       className="field-select sm:max-w-xs"
                       value={chosen?.id ?? ""}
@@ -225,19 +257,21 @@ export default function AdminTicketPage() {
                         </option>
                       ))}
                     </select>
-                    <div>
-                      <Button type="button" disabled={!chosen} onClick={() => setDispatchOpen(true)}>
-                        派发给维修人员
-                      </Button>
-                    </div>
-                  </>
+                    <Button type="button" disabled={!chosen} onClick={() => setDispatchOpen(true)}>
+                      派发给维修人员
+                      <ArrowRight className="size-4" />
+                    </Button>
+                  </div>
                 )}
               </div>
             )}
           </section>
 
-          <section className="rounded-xl bg-card p-5 ring-1 ring-foreground/10">
-            <h2 className="font-display text-xl">处理记录</h2>
+          <section className="panel p-5">
+            <h2 className="flex items-center gap-2 font-display text-xl tracking-tight">
+              <History className="size-4.5 text-muted-foreground" />
+              处理记录
+            </h2>
             <div className="mt-4">
               <Timeline events={ticket.history} />
             </div>
@@ -281,20 +315,29 @@ function ResultCard({
   const mismatch =
     record.ok && record.tag && record.position && positionFor(record.tag) !== record.position;
   return (
-    <article className={`rounded-lg p-3 ring-1 ${confirmed ? "ring-primary" : "ring-foreground/10"}`}>
+    <article
+      className={`rounded-lg bg-card p-3.5 ring-1 transition-shadow ${
+        confirmed ? "shadow-sm ring-2 ring-primary" : "ring-foreground/10"
+      }`}
+    >
       <div className="flex flex-wrap items-center justify-between gap-2 text-xs text-muted-foreground">
         <span>
           {formatTime(record.createdAt)} · {record.latencyMs} ms
           {record.httpStatus ? ` · HTTP ${record.httpStatus}` : ""}
         </span>
-        {confirmed ? <span className="text-primary">已确认</span> : null}
+        {confirmed ? (
+          <span className="inline-flex items-center gap-1 rounded-full bg-primary/10 px-2 py-0.5 font-medium text-primary">
+            <BadgeCheck className="size-3" />
+            已确认
+          </span>
+        ) : null}
       </div>
       {record.ok && record.tag && record.urgency && record.position ? (
         <>
-          <div className="mt-2 flex flex-wrap items-center gap-2">
+          <div className="mt-2.5 flex flex-wrap items-center gap-2">
             <TagBadge tag={record.tag} />
             <UrgencyBadge urgency={record.urgency} />
-            <span className="text-sm">{record.position}</span>
+            <span className="text-sm font-medium">{record.position}</span>
           </div>
           <p className="mt-2 text-sm leading-6">{record.reason}</p>
           {mismatch ? <p className="mt-2 text-xs text-destructive">岗位和标签映射不一致，确认前请再看一眼。</p> : null}
@@ -308,7 +351,7 @@ function ResultCard({
       {record.raw ? (
         <details className="mt-3">
           <summary className="cursor-pointer text-xs text-muted-foreground">接口原文</summary>
-          <pre className="mt-2 max-h-40 overflow-auto whitespace-pre-wrap text-xs text-muted-foreground">{record.raw}</pre>
+          <pre className="mt-2 max-h-40 overflow-auto whitespace-pre-wrap rounded-lg bg-muted/60 p-2.5 text-xs text-muted-foreground">{record.raw}</pre>
         </details>
       ) : null}
     </article>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { ChartColumn, Scale, Split, TriangleAlert } from "lucide-react";
 import { Shell } from "@/components/shell";
 import { api } from "@/lib/client";
 import { URGENCY_LABEL, formatRate, formatTime, tagLabel } from "@/lib/format";
@@ -30,19 +31,27 @@ export default function EvalPage() {
 
   return (
     <Shell role="admin">
-      <h1 className="font-display text-3xl">测试统计</h1>
-      <p className="mt-2 max-w-3xl text-sm leading-6 text-muted-foreground">
+      <div className="flex items-center gap-3">
+        <span className="flex size-10 items-center justify-center rounded-xl bg-primary/10 text-primary">
+          <ChartColumn className="size-5" />
+        </span>
+        <div>
+          <h1 className="font-display text-3xl tracking-tight">测试统计</h1>
+          <p className="mt-0.5 text-xs text-muted-foreground">逐条真实调用现算，没有写死的百分比</p>
+        </div>
+      </div>
+      <p className="mt-3 max-w-3xl text-sm leading-6 text-muted-foreground">
         测试集按机房场景写成模拟报修，每条带标准答案。准确率、失败案例和两模型不一致案例都从逐条接口结果现算，页面里没有写死的百分比。
       </p>
       {error ? <p className="mt-4 text-sm text-destructive">{error}</p> : null}
       {!data && !error ? <p className="mt-4 text-sm text-muted-foreground">正在读取统计…</p> : null}
       {data && !data.ready ? (
-        <section className="mt-6 rounded-xl bg-card p-5 ring-1 ring-foreground/10">
+        <section className="panel mt-6 p-5">
           <p className="text-sm leading-6">
             已写入 {data.caseCount} 条模拟报修和标准答案。{data.message}
           </p>
           <p className="mt-3 text-sm leading-6 text-muted-foreground">
-            在服务器配置 DEEPSEEK_API_KEY 和 ZHIPU_API_KEY 后运行 <code>npm run eval</code>。脚本会真实调用两个接口，完成全部记录后才生成统计文件。
+            在服务器配置 DEEPSEEK_API_KEY 和 ZHIPU_API_KEY 后运行 <code className="rounded bg-muted px-1.5 py-0.5 text-xs">npm run eval</code>。脚本会真实调用两个接口，完成全部记录后才生成统计文件。
           </p>
         </section>
       ) : null}
@@ -74,11 +83,14 @@ function Report({
         统计时间 {formatTime(data.generatedAt)}。模型 {data.deepseekModel} 与 {data.zhipuModel}。分母是测试集 {data.summary.caseCount} 条，失败也算进分母。
       </p>
       <div className="grid gap-4 md:grid-cols-2">
-        <SummaryCard title="DeepSeek" summary={data.summary.deepseek} />
-        <SummaryCard title="智谱 GLM" summary={data.summary.zhipu} />
+        <SummaryCard title="DeepSeek" summary={data.summary.deepseek} barClass="bg-chart-1" />
+        <SummaryCard title="智谱 GLM" summary={data.summary.zhipu} barClass="bg-chart-4" />
       </div>
-      <section className="rounded-xl bg-card p-5 ring-1 ring-foreground/10">
-        <h2 className="font-display text-2xl">按标签的命中</h2>
+      <section className="panel p-5">
+        <h2 className="flex items-center gap-2 font-display text-2xl tracking-tight">
+          <Scale className="size-5 text-muted-foreground" />
+          按标签的命中
+        </h2>
         <div className="mt-4 overflow-x-auto">
           <table className="w-full text-left text-sm">
             <thead className="text-muted-foreground">
@@ -103,17 +115,20 @@ function Report({
           </table>
         </div>
       </section>
-      <section className="rounded-xl bg-card p-5 ring-1 ring-foreground/10">
-        <h2 className="font-display text-2xl">两模型不一致</h2>
+      <section className="panel p-5">
+        <h2 className="flex items-center gap-2 font-display text-2xl tracking-tight">
+          <Split className="size-5 text-muted-foreground" />
+          两模型不一致
+        </h2>
         <p className="mt-1 text-sm text-muted-foreground">
           {disagreements.length} 条。两边都成功返回，但标签、紧急程度或岗位不同。
         </p>
         {disagreements.length === 0 ? (
           <p className="mt-3 text-sm">这次调用没有不一致案例。</p>
         ) : (
-          <div className="mt-4 space-y-3">
+          <div className="mt-4 grid gap-3">
             {disagreements.map((row) => (
-              <article key={row.caseId} className="rounded-lg p-3 ring-1 ring-foreground/10">
+              <article key={row.caseId} className="rounded-lg p-3.5 ring-1 ring-foreground/10">
                 <p className="text-sm font-medium">
                   {row.caseId} · {row.room} · {row.device}
                 </p>
@@ -122,15 +137,20 @@ function Report({
                   标准答案：{tagLabel(row.expected.tag)} / {URGENCY_LABEL[row.expected.urgency as Urgency]} / {row.expected.position}
                 </p>
                 <p className="text-sm text-muted-foreground">依据：{row.basis}</p>
-                <p className="mt-2 text-sm">DeepSeek：{line(row.deepseek)}</p>
-                <p className="text-sm">智谱：{line(row.zhipu)}</p>
+                <div className="mt-2 grid gap-1 text-sm sm:grid-cols-2">
+                  <p><span className="font-medium">DeepSeek：</span>{line(row.deepseek)}</p>
+                  <p><span className="font-medium">智谱：</span>{line(row.zhipu)}</p>
+                </div>
               </article>
             ))}
           </div>
         )}
       </section>
-      <section className="rounded-xl bg-card p-5 ring-1 ring-foreground/10">
-        <h2 className="font-display text-2xl">失败案例</h2>
+      <section className="panel p-5">
+        <h2 className="flex items-center gap-2 font-display text-2xl tracking-tight">
+          <TriangleAlert className="size-5 text-muted-foreground" />
+          失败案例
+        </h2>
         <p className="mt-1 text-sm text-muted-foreground">{failures.length} 条模型结果未与标准答案完全一致，或调用没有成功。</p>
         {failures.length === 0 ? (
           <p className="mt-3 text-sm">这次调用没有失败案例。</p>
@@ -168,18 +188,49 @@ function Report({
   );
 }
 
-function SummaryCard({ title, summary }: { title: string; summary: ScoreSummary["deepseek"] }) {
+function RateRow({ label, hits, total, barClass }: { label: string; hits: number; total: number; barClass: string }) {
+  const pct = total > 0 ? Math.round((hits / total) * 1000) / 10 : 0;
   return (
-    <section className="rounded-xl bg-card p-5 ring-1 ring-foreground/10">
-      <h2 className="font-display text-2xl">{title}</h2>
-      <dl className="mt-3 space-y-2 text-sm">
-        <div className="flex justify-between gap-3"><dt>标签准确率</dt><dd>{formatRate(summary.tagHits, summary.calls)}</dd></div>
-        <div className="flex justify-between gap-3"><dt>紧急程度准确率</dt><dd>{formatRate(summary.urgencyHits, summary.calls)}</dd></div>
-        <div className="flex justify-between gap-3"><dt>岗位准确率</dt><dd>{formatRate(summary.positionHits, summary.calls)}</dd></div>
-        <div className="flex justify-between gap-3"><dt>三项全对</dt><dd>{formatRate(summary.fullHits, summary.calls)}</dd></div>
-        <div className="flex justify-between gap-3"><dt>接口失败</dt><dd>{summary.httpFailures}</dd></div>
-        <div className="flex justify-between gap-3"><dt>解析失败</dt><dd>{summary.parseFailures}</dd></div>
-        <div className="flex justify-between gap-3"><dt>判定不符</dt><dd>{summary.mismatches}</dd></div>
+    <div>
+      <div className="flex items-baseline justify-between gap-3">
+        <dt>{label}</dt>
+        <dd className="tabular-nums">{formatRate(hits, total)}</dd>
+      </div>
+      <div className="mt-1 h-1.5 overflow-hidden rounded-full bg-muted">
+        <div className={`h-full rounded-full ${barClass}`} style={{ width: `${pct}%` }} />
+      </div>
+    </div>
+  );
+}
+
+function SummaryCard({ title, summary, barClass }: { title: string; summary: ScoreSummary["deepseek"]; barClass: string }) {
+  return (
+    <section className="panel p-5">
+      <div className="flex items-baseline justify-between gap-3">
+        <h2 className="font-display text-2xl tracking-tight">{title}</h2>
+        <p className="text-sm text-muted-foreground">
+          三项全对 <span className="font-semibold text-foreground">{formatRate(summary.fullHits, summary.calls)}</span>
+        </p>
+      </div>
+      <dl className="mt-4 space-y-3 text-sm">
+        <RateRow label="标签准确率" hits={summary.tagHits} total={summary.calls} barClass={barClass} />
+        <RateRow label="紧急程度准确率" hits={summary.urgencyHits} total={summary.calls} barClass={barClass} />
+        <RateRow label="岗位准确率" hits={summary.positionHits} total={summary.calls} barClass={barClass} />
+        <RateRow label="三项全对" hits={summary.fullHits} total={summary.calls} barClass={barClass} />
+      </dl>
+      <dl className="mt-4 grid grid-cols-3 gap-2 border-t border-border/70 pt-3 text-center text-sm">
+        <div>
+          <dt className="text-xs text-muted-foreground">接口失败</dt>
+          <dd className="mt-0.5 font-semibold tabular-nums">{summary.httpFailures}</dd>
+        </div>
+        <div>
+          <dt className="text-xs text-muted-foreground">解析失败</dt>
+          <dd className="mt-0.5 font-semibold tabular-nums">{summary.parseFailures}</dd>
+        </div>
+        <div>
+          <dt className="text-xs text-muted-foreground">判定不符</dt>
+          <dd className="mt-0.5 font-semibold tabular-nums">{summary.mismatches}</dd>
+        </div>
       </dl>
     </section>
   );

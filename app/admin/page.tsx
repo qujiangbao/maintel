@@ -1,11 +1,11 @@
 "use client";
 
-import Link from "next/link";
 import { useEffect, useState } from "react";
-import { StatusBadge } from "@/components/badges";
+import { Inbox } from "lucide-react";
 import { Shell } from "@/components/shell";
+import { TicketCard } from "@/components/ticket-card";
 import { api } from "@/lib/client";
-import { STATUS_LABEL, formatTime } from "@/lib/format";
+import { STATUS_LABEL } from "@/lib/format";
 import type { Ticket, TicketStatus } from "@/lib/types";
 
 const filters: Array<{ id: "all" | TicketStatus; label: string }> = [
@@ -30,53 +30,73 @@ export default function AdminPage() {
   }, []);
 
   const visible = tickets?.filter((ticket) => filter === "all" || ticket.status === filter) ?? [];
+  const countFor = (id: (typeof filters)[number]["id"]) =>
+    id === "all" ? (tickets?.length ?? 0) : (tickets?.filter((t) => t.status === id).length ?? 0);
+  const awaitingConfirm = tickets?.filter((t) => t.status === "submitted" || t.status === "triaged").length ?? 0;
 
   return (
     <Shell role="admin">
       <div className="flex flex-wrap items-end justify-between gap-3">
         <div>
-          <h1 className="font-display text-3xl">报修工单</h1>
+          <h1 className="font-display text-3xl tracking-tight">报修工单</h1>
           <p className="mt-1 text-sm text-muted-foreground">先分诊，再确认，然后才能派给维修人员。</p>
         </div>
+        {tickets && awaitingConfirm > 0 ? (
+          <span className="rounded-full bg-amber-100 px-3 py-1 text-xs font-medium text-amber-950 ring-1 ring-amber-300/60">
+            {awaitingConfirm} 张待分诊确认
+          </span>
+        ) : null}
       </div>
-      <div className="mt-4 flex flex-wrap gap-2">
-        {filters.map((item) => (
-          <button
-            key={item.id}
-            type="button"
-            onClick={() => setFilter(item.id)}
-            className={`rounded-full px-3 py-1 text-sm ${filter === item.id ? "bg-primary text-primary-foreground" : "bg-card ring-1 ring-foreground/10"}`}
-          >
-            {item.label}
-          </button>
-        ))}
+
+      <div className="mt-5 flex flex-wrap gap-2">
+        {filters.map((item) => {
+          const active = filter === item.id;
+          return (
+            <button
+              key={item.id}
+              type="button"
+              onClick={() => setFilter(item.id)}
+              className={`flex items-center gap-1.5 rounded-full px-3 py-1.5 text-sm transition-all ${
+                active
+                  ? "bg-primary text-primary-foreground shadow-sm"
+                  : "bg-card ring-1 ring-foreground/10 hover:ring-ring/50"
+              }`}
+            >
+              {item.label}
+              <span
+                className={`rounded-full px-1.5 text-xs tabular-nums ${
+                  active ? "bg-white/20" : "bg-muted text-muted-foreground"
+                }`}
+              >
+                {countFor(item.id)}
+              </span>
+            </button>
+          );
+        })}
       </div>
+
       {error ? <p className="mt-4 text-sm text-destructive">{error}</p> : null}
       {tickets === null && !error ? <p className="mt-4 text-sm text-muted-foreground">正在读取工单…</p> : null}
       {tickets?.length === 0 ? (
-        <p className="mt-6 text-sm leading-6 text-muted-foreground">还没有学生报修。用学生入口提交后，工单会出现在这里。</p>
+        <div className="panel mt-6 flex flex-col items-center px-6 py-12 text-center">
+          <span className="flex size-12 items-center justify-center rounded-2xl bg-muted text-muted-foreground">
+            <Inbox className="size-6" />
+          </span>
+          <p className="mt-4 text-sm font-medium">还没有学生报修</p>
+          <p className="mt-1 text-sm leading-6 text-muted-foreground">用学生入口提交后，工单会出现在这里。</p>
+        </div>
       ) : null}
       {tickets && tickets.length > 0 && visible.length === 0 ? (
         <p className="mt-6 text-sm text-muted-foreground">这个状态下没有工单。</p>
       ) : null}
-      <div className="mt-4 space-y-3">
+      <div className="mt-4 grid gap-3">
         {visible.map((ticket) => (
-          <Link
+          <TicketCard
             key={ticket.id}
+            ticket={ticket}
             href={`/admin/tickets/${ticket.id}`}
-            className="block rounded-xl bg-card p-4 ring-1 ring-foreground/10 hover:bg-accent"
-          >
-            <div className="flex flex-wrap items-center justify-between gap-2">
-              <span className="font-medium">
-                {ticket.no} · {ticket.room} · {ticket.device}
-              </span>
-              <StatusBadge status={ticket.status} />
-            </div>
-            <p className="mt-2 line-clamp-2 text-sm text-muted-foreground">{ticket.description}</p>
-            <p className="mt-2 text-xs text-muted-foreground">
-              {ticket.studentName} · {formatTime(ticket.updatedAt)} · 分诊 {ticket.triages.length} 次
-            </p>
-          </Link>
+            meta={`${ticket.studentName} · 分诊 ${ticket.triages.length} 次`}
+          />
         ))}
       </div>
     </Shell>
